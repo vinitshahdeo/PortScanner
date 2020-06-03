@@ -35,7 +35,27 @@ The servers are opened at multiple ports, you can change the low range and high 
 - [Express](https://expressjs.com/) -  Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html) -  Low-level networking interface. Check `scanner.py`
 
+## Author
+
+|                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width=150px height=150px /></a>                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
+| <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
+
+[![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/) 
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo)
+
+----
+```javascript
+
+if (_.isAwesome(thisRepo)) {
+  thisRepo.star(); // thanks in advance :p
+}
+
+```
+----
 
 
-<p align="center"><sup>This repository is intended for individuals to test their own equipment for weak
- security, and the author(<b>@vinitshahdeo</b>) will take no responsibility if it is put to any other use.</sup></p>
+<sup>This repository is intended for individuals to test their own equipment for weak
+ security, and the author(**@vinitshahdeo**) will take no responsibility if it is put to any other use. Check [DISCLAIMER.md](./DISCLAIMER.md)</sup>
