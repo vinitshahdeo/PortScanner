@@ -46,8 +46,8 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 ## Useful resources: 
 
-- [Express](https://expressjs.com/) -  Node.js web framework used for creating server. Check `server/index.js`
-- [Socket](https://docs.python.org/3/library/socket.html) -  Low-level networking interface. Check `scanner.py`
+- [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
+- [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface. Check `scanner.py`
 
 ## Author
 
@@ -59,6 +59,10 @@ The servers are opened at multiple ports, you can change the low range and high 
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/) 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo)
+
+## TL;DR
+
+Check out [this](https://gist.github.com/vinitshahdeo/92bf103f74a98cc55a447aa522bcdea9) gist if you're only looking for a **Python** script for **scanning ports**.
 
 ----
 ```javascript
