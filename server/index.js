@@ -1,3 +1,9 @@
+/**
+ * 
+ * @description Creates multiple Express servers
+ * @author Vinit Shahdeo <vinitshahdeo@gmail.com>
+ */
+
 var express = require('express');
 var config = require('../config.json');
 var randNumGenerator = require('../utils/randomNum');
