@@ -1,14 +1,18 @@
-# Port Scanner
+# Port Scanner 
 ## A basic Port Scanner using Python with an Express Server to test!
+
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
 ## Pre Requesites
 
-- **Python** `> v2.7.0`
+[![node-current](https://img.shields.io/node/v/express?logo=node.js)](https://nodejs.org/)
+
+- **Python** `>= v2.7.0`
     - Install Python from [here](https://www.python.org/).
 
-- **Node.js** `> v6.10.0`
+- **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
 
 ## How to run?
@@ -64,6 +68,7 @@ if (_.isAwesome(thisRepo)) {
 ```
 ----
 
+[![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/vinitshahdeo/PortScanner/) [![Built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahdeo/)
 
 <sup>This repository is intended for individuals to test their own equipment for weak
  security, and the author(**@vinitshahdeo**) will take no responsibility if it is put to any other use. Check [DISCLAIMER.md](./DISCLAIMER.md)</sup>
