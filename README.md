@@ -3,6 +3,14 @@
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
+## Pre Requesites
+
+- **Python** `> v2.7.0`
+    - Install Python from [here](https://www.python.org/).
+
+- **Node.js** `> v6.10.0`
+    - Install Node.js from [here](https://nodejs.org/).
+
 ## How to run?
 
 - **Open terminal and type `npm start`**: This will start multiple servers within the given range.
