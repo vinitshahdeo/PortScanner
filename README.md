@@ -17,9 +17,11 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 ## How to run?
 
-- **Open terminal and type `npm start`**: This will start multiple servers within the given range.
+- **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
-- **Open another terminal and type `python scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
+- In the same terminal and **type `npm start`**: This will start multiple servers within the given range.
+
+- **Open another terminal** and **type `python scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
