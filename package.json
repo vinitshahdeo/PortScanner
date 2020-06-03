@@ -1,0 +1,28 @@
+{
+  "name": "portscanner",
+  "version": "1.0.0",
+  "description": "\"A basic port scanner\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinitshahdeo/PortScanner.git"
+  },
+  "keywords": [
+    "port",
+    "scanner",
+    "python",
+    "node"
+  ],
+  "author": "Vinit Shahdeo <vinitshahdeo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vinitshahdeo/PortScanner/issues"
+  },
+  "homepage": "https://github.com/vinitshahdeo/PortScanner#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
