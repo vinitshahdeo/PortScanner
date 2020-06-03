@@ -44,10 +44,10 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `high`: _highest port number (**exclusive**)_
 - `count`: _total number of ports_
 
-## Useful resources: 
+## Useful resources 
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
-- [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface. Check `scanner.py`
+- [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
 
 ## Author
 
