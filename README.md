@@ -7,7 +7,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 ## Pre-requisites
 
-[![node-current](https://img.shields.io/node/v/express?logo=node.js)](https://nodejs.org/)
+[![node-current](https://img.shields.io/node/v/express?logo=node.js)](https://nodejs.org/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/PortScanner?logo=python&logoColor=white)](https://www.python.org/)
 
 - **Python** `>= v2.7.0`
     - Install Python from [here](https://www.python.org/).
