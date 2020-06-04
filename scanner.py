@@ -3,6 +3,7 @@ import socket
 import subprocess
 import sys
 from datetime import datetime
+import json
 
 # Clear the screen
 subprocess.call('clear', shell=True)
@@ -19,10 +20,17 @@ print "-" * 60
 # Check what time the scan started
 t1 = datetime.now()
 
-# scanning the port only in range of (1, 8888)
+#Fetching port range from config.json
+with open('config.json') as f:
+  data = json.load(f)
+  high = data['range']['high']
+  low = data['range']['low']
+
+
+# scanning the port in range of (low , high)
 
 try:
-    for port in range(1,8888):  
+    for port in range(int(low) , int(high)):  
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
