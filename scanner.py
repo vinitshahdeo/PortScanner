@@ -8,6 +8,13 @@ import json
 # Clear the screen
 subprocess.call('clear', shell=True)
 
+# Pull port range from config.json
+with open("config.json") as json_file:
+    data = json.load(json_file)
+    loRange = int(data['range']['low'])
+    hiRange = int(data['range']['high'])
+
+
 # Ask for input
 remoteServer    = raw_input("Enter a remote host to scan: ")
 remoteServerIP  = socket.gethostbyname(remoteServer)
