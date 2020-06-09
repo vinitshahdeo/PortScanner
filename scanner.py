@@ -1,11 +1,17 @@
 #!/usr/bin/env python
 import socket
 import subprocess
+import json
 import sys
 from datetime import datetime
 
 # Clear the screen
 subprocess.call('clear', shell=True)
+
+with open('config.json') as file:
+  data_json = json.load(file)
+  low = int(data_json['range']['low'])
+  high = int(data_json['range']['high'])
 
 # Ask for input
 remoteServer    = raw_input("Enter a remote host to scan: ")
@@ -22,7 +28,7 @@ t1 = datetime.now()
 # scanning the port only in range of (1, 8888)
 
 try:
-    for port in range(1,8888):  
+    for port in range(low,high):  
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
