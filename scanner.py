@@ -35,7 +35,7 @@ except ValueError:
 # scanning the port only in range of (range_low,range_high)
 
 try:
-    for port in range(range_low,range_high):  
+    for port in range(range_low,range_high):
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
