@@ -28,11 +28,11 @@ try:
     range_low = int(config['range']['low'])
     
 except FileNotFoundError:
-    print("config.json file not found")
+    print("json file not found")
 except ValueError:
     print("Kindly check the json file for appropriateness of range")
 
-# scanning the port only in range of (1, 8888)
+# scanning the port only in range of (range_low,range_high)
 
 try:
     for port in range(range_low,range_high):  
