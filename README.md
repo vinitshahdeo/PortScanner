@@ -50,22 +50,23 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 ## Performance using threads :dart:
 
-|Range(low-high)|`scanner.py`   |`scanner_thread.py`|
-|---------------|---------------|-------------------|
-|1-8888         |xxx miliseconds|x miliseconds      |
+|Range(low-high)|`scanner.py` `(in milliseconds)`  |`scanner_thread.py` `(in milliseconds)` |
+|---------------|----------------------------------|----------------------------------------|
+|1-80           |143243                            |30862                                   |
 
 - `CONST_NUM_THREADS` : 8
 
-### Performance on basis of number of threads
+### Performance on the basis of number of threads
 
-Range of threads: `1-10000`
+Range of threads: `1-80`
 
-|Number of threads|Execution time | Compared Performances|
-|-----------------|---------------|----------------------|
-|2                |xxx miliseconds|                      |
-|4                |xxx miliseconds|                      |
-|8                |xxx miliseconds|                      |
-|16               |xxx miliseconds|                      |
+|Number of threads|Execution time `(in milliseconds)` | Compared Performances|
+|-----------------|-----------------------------------|----------------------|
+|2                |71627                              |50 % faster           |
+|4                |40808                              |71.51 % faster        |
+|8                |37003                              |74.17 % faster        |
+|16               |36870                              |74.26 % faster        |
+|32               |32674                              |77.19 % faster        |
 
 ## Useful resources 
 
