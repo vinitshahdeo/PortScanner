@@ -1,12 +1,12 @@
 {
     "range": {
         "low": "1",
-        "high": "8888"
+        "high": "80"
     },
 
     "count": "10",
 
     "thread": { 
-        "count": 8
+        "count": "32"
     }
 }
