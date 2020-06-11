@@ -56,7 +56,7 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 - `CONST_NUM_THREADS` : 8
 
-### Performance on the basis of number of threads
+### Performance on the basis of number of threads :chart_with_downwards_trend:
 
 Range of ports: `1-80`
 
@@ -68,11 +68,16 @@ Range of ports: `1-80`
 |16               |36870                              |74.26 % faster        |
 |32               |32674                              |77.19 % faster        |
 
+#### Performance Analysis 
+
+![Performance Analysis](./asset/Graph.png)
+
 ## Useful resources 
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `scanner_thread.py`
+
 ## Author
 
 |                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
