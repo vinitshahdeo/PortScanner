@@ -36,19 +36,42 @@ The servers are opened at multiple ports, you can change the low range and high 
         "low": "1",
         "high": "8888"
     },
-    "count": "10"
+    "count": "10",
+    "thread": { 
+        "count": 8
+    }
 }
 ```
 
 - `low`: _lowest port number (**inclusive**)_
 - `high`: _highest port number (**exclusive**)_
 - `count`: _total number of ports_
+- `thread.count`: _total number of concurrent threads_
+
+## Performance using threads :dart:
+
+|Range(low-high)|`scanner.py`   |`scanner_thread.py`|
+|---------------|---------------|-------------------|
+|1-8888         |xxx miliseconds|x miliseconds      |
+
+- `CONST_NUM_THREADS` : 8
+
+### Performance on basis of number of threads
+
+Range of threads: `1-10000`
+
+|Number of threads|Execution time | Compared Performances|
+|-----------------|---------------|----------------------|
+|2                |xxx miliseconds|                      |
+|4                |xxx miliseconds|                      |
+|8                |xxx miliseconds|                      |
+|16               |xxx miliseconds|                      |
 
 ## Useful resources 
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
-
+- [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `scanner_thread.py`
 ## Author
 
 |                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
