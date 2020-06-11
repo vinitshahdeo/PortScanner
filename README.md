@@ -21,7 +21,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 - In the same terminal and **type `npm start`**: This will start multiple servers within the given range.
 
-- **Open another terminal** and **type `python scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
+- **Open another terminal** and **type `python src/scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
@@ -50,11 +50,14 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 ## Performance using threads :dart:
 
-|Range(low-high)|`scanner.py` (in milliseconds)    |`scanner_thread.py` (in milliseconds)   |
+- `src/single/scanner.py`: Scanner without thread
+- `src/scanner.py`: Scanner with multi threads
+
+|Range(low-high)|`src/single/scanner.py` (in milliseconds)    |`src/scanner.py` (in milliseconds)   |
 |---------------|----------------------------------|----------------------------------------|
 |1-80           |143243                            |30862                                   |
 
-- `CONST_NUM_THREADS` : 8
+> `CONST_NUM_THREADS` : 8
 
 ### Performance on the basis of number of threads :chart_with_downwards_trend:
 
