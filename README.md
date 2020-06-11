@@ -36,18 +36,47 @@ The servers are opened at multiple ports, you can change the low range and high 
         "low": "1",
         "high": "8888"
     },
-    "count": "10"
+    "count": "10",
+    "thread": { 
+        "count": 8
+    }
 }
 ```
 
 - `low`: _lowest port number (**inclusive**)_
 - `high`: _highest port number (**exclusive**)_
 - `count`: _total number of ports_
+- `thread.count`: _total number of concurrent threads_
+
+## Performance using threads :dart:
+
+|Range(low-high)|`scanner.py` (in milliseconds)    |`scanner_thread.py` (in milliseconds)   |
+|---------------|----------------------------------|----------------------------------------|
+|1-80           |143243                            |30862                                   |
+
+- `CONST_NUM_THREADS` : 8
+
+### Performance on the basis of number of threads :chart_with_downwards_trend:
+
+Range of ports: `1-80`
+
+|Number of threads|Execution time (in milliseconds)   | Compared Performances|
+|-----------------|-----------------------------------|----------------------|
+|2                |71627                              |50 % faster           |
+|4                |40808                              |71.51 % faster        |
+|8                |37003                              |74.17 % faster        |
+|16               |36870                              |74.26 % faster        |
+|32               |32674                              |77.19 % faster        |
+
+#### Performance Analysis 
+
+![Performance Analysis](./assets/Graph.png)
 
 ## Useful resources 
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
+- [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `scanner_thread.py`
 
 ## Author
 
