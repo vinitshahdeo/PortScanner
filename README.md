@@ -70,7 +70,7 @@ Range of ports: `1-80`
 
 #### Performance Analysis 
 
-![Performance Analysis](./asset/Graph.png)
+![Performance Analysis](./assets/Graph.png)
 
 ## Useful resources 
 
