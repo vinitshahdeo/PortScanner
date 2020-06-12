@@ -6,7 +6,7 @@
 
 var express = require('express');
 var config = require('../config.json');
-var randNumGenerator = require('../utils/randomNum');
+var randNumGenerator = require('./utils/randomNum');
 
 let countOfPorts = config.count, // total number of ports to open
     low = config.range.low, // lower range of port (inclusive)
