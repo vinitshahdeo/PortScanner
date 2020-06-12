@@ -1,11 +1,11 @@
 # Port Scanner 
-## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) using Python with an [Express](https://expressjs.com/) Server to test!
+## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
-## Pre-requisites
+## Pre-requisites :rotating_light:
 
 [![node-current](https://img.shields.io/node/v/express?logo=node.js)](https://nodejs.org/) [![GitHub top language](https://img.shields.io/github/languages/top/vinitshahdeo/PortScanner?logo=python&logoColor=white)](https://www.python.org/)
 
@@ -15,7 +15,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
 
-## How to run?
+## How to run? :rocket:
 
 - **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
@@ -48,7 +48,7 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
 
-## Branching
+## Branching :construction:
 
 - `master` branch is maintained and tested regulary for **Python 2**.
 
