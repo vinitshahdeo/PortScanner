@@ -106,8 +106,8 @@ Range of ports: `1-80`
 
 |      Name :medal_military:    |     Social Media :wave:    | GitHub :octocat: |
 |:-------------:|:-------------------|------------------|
-| Vinit Shahdeo | :bird: [Twitter]() <br>:mortar_board: [LinkedIn]() | [@vinitshahdeo](https://github.com/vinitshahdeo/)    |
-| Kashish       | :bird: [Twitter]() <br>:mortar_board: [LinkedIn]() | [@Kashish121](https://github.com/Kashish121/)      |
+| Vinit Shahdeo | :bird: [Twitter](https://twitter.com/vinit_shahdeo) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/) | [@vinitshahdeo](https://github.com/vinitshahdeo/)    |
+| Kashish       | :bird: [Twitter](https://twitter.com/kashish_121) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/kashish121/) | [@Kashish121](https://github.com/Kashish121/)      |
 
 
 
