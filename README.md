@@ -58,6 +58,14 @@ The servers are opened at multiple ports, you can change the low range and high 
 git checkout feature/python3.8
 ```
 
+## Need of Multithreading :heavy_check_mark:
+
+>The ability of a process to execute multiple threads parallelly is called multithreading. Ideally, multithreading can significantly improve the performance of any program.
+
+Imagine scanning substantial number of ports(`range.high` = 8888) consecutively. The process would require quite a long time. 
+
+This calls for the need of concurrency in different parts of this range(1-8888). That is, running different parts(1-1111, 1112-2222, 2223-3333...) of the same process at the same time. This would reduce the time required for completion by significant amount. The reduction in time can be related to the number of concurrent ranges(threads) being scanned simultaneously. Checkout the `Performance Analysis` for a follow up.
+
 ## Performance using threads :dart:
 
 - `src/single/scanner.py`: Scanner without thread
