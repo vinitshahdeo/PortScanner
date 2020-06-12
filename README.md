@@ -103,8 +103,13 @@ Range of ports: `1-80`
 
 [![GitHub issues](https://img.shields.io/github/issues/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/vinitshahdeo/PortScanner?color=olive&logo=github)](https://github.com/vinitshahdeo/PortScanner/pulls)
 
-- [@vinitshahdeo](https://github.com/vinitshahdeo/)
-- [@Kashish121](https://github.com/Kashish121/)
+
+|      Name :medal_military:    |     Social Media :wave:    | GitHub :octocat: |
+|:-------------:|:-------------------|------------------|
+| Vinit Shahdeo | :bird: [Twitter]() <br>:mortar_board: [LinkedIn]() | [@vinitshahdeo](https://github.com/vinitshahdeo/)    |
+| Kashish       | :bird: [Twitter]() <br>:mortar_board: [LinkedIn]() | [@Kashish121](https://github.com/Kashish121/)      |
+
+
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
 
