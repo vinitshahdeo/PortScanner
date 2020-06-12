@@ -26,7 +26,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
 
-## Configuration
+## Configuration :gear:
 
 The servers are opened at multiple ports, you can change the low range and high range for the ports to be listened by the Express server.
 
@@ -75,13 +75,13 @@ Range of ports: `1-80`
 
 ![Performance Analysis](./assets/Graph.png)
 
-## Useful resources 
+## Useful resources :books:
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `scanner_thread.py`
 
-## Contributors
+## Contributors :trophy:
 
 [![GitHub issues](https://img.shields.io/github/issues/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/vinitshahdeo/PortScanner?color=olive&logo=github)](https://github.com/vinitshahdeo/PortScanner/pulls)
 
