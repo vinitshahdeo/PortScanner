@@ -88,8 +88,8 @@ Range of ports: `1-80`
 ## Useful resources :books:
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
-- [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `scanner.py`
-- [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `scanner_thread.py`
+- [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `src/scanner.py`
+- [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `src/scanner_thread.py`
 
 ## Contributors :trophy:
 
