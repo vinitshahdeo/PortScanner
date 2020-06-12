@@ -106,10 +106,11 @@ Range of ports: `1-80`
 
 |      Name :medal_military:    |     Social Media :wave:    | GitHub :octocat: |
 |:-------------:|:-------------------|------------------|
-| Vinit Shahdeo | :bird: [Twitter](https://twitter.com/vinit_shahdeo) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/) | [@vinitshahdeo](https://github.com/vinitshahdeo/)    |
-| Kashish       | :bird: [Twitter](https://twitter.com/kashish_121) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/kashish121/) | [@Kashish121](https://github.com/Kashish121/)      |
+| Vinit Shahdeo | :bird: [Twitter](https://twitter.com/Vinit_Shahdeo) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/vinitshahdeo/) | [@vinitshahdeo](https://github.com/vinitshahdeo/)  |
+| Kashish       | :bird: [Twitter](https://twitter.com/Kashish_121) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/kashish121/) | [@Kashish121](https://github.com/Kashish121/)      |
+| Ishika Dubey  | :bird: [Twitter](https://twitter.com/ishika1727) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/ishika1727/) | [@ishika1727](https://github.com/ishika1727/)      |
 
-
+> **See the contribution graph [here](https://github.com/vinitshahdeo/PortScanner/graphs/contributors).**
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
 
