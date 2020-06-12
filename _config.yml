@@ -1,3 +1,5 @@
 theme: jekyll-theme-cayman
 title: Port Scanner
 show_downloads: true
+plugins:
+  - jemoji
