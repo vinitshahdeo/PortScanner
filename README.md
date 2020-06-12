@@ -48,6 +48,16 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
 
+## Branching
+
+- `master` branch is maintained and tested regulary for **Python 2**.
+
+- Please checkout `feature/python3.8` if you're using **[Python 3](https://www.python.org/download/releases/3.0/)**.
+
+```sh
+git checkout feature/python3.8
+```
+
 ## Performance using threads :dart:
 
 - `src/single/scanner.py`: Scanner without thread
