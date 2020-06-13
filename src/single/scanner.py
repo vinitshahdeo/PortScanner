@@ -22,7 +22,7 @@ t1 = datetime.now()
 # scanning the port only in range of (1, 8888)
 
 try:
-    for port in range(1,80):  
+    for port in range(1,8888):  
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
