@@ -33,8 +33,8 @@ try:
     with open(get_absolute_path('../config.json')) as config_file:
         config = json.load(config_file)
         # print get_absolute_path('../config.json')
-    range_low = int(config['IPRange']['low'])
-    range_high = int(config['IPRange']['high'])
+    range_low = int(config['ipRange']['low'])
+    range_high = int(config['ipRange']['high'])
     # defining number of threads running concurrently
     CONST_NUM_THREADS = int(config['thread']['count'])
 
