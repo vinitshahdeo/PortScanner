@@ -62,7 +62,7 @@ def scan(addr):
         return 0
 
 
-def run1(ips, stn1, edn1):
+def run1(ips, range_low, range_high):
     for ip in xrange(range_low, range_high):
         addr = net3+str(ip)
         # gets full address
