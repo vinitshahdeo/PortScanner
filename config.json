@@ -3,7 +3,7 @@
         "low": "1",
         "high": "8888"
     },
-    "iprange": {
+    "IPRange": {
         "low": "0",
         "high": "255"
     },

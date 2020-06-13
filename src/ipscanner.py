@@ -33,8 +33,8 @@ try:
     with open(get_absolute_path('../config.json')) as config_file:
         config = json.load(config_file)
         # print get_absolute_path('../config.json')
-    range_low = int(config['iprange']['low'])
-    range_high = int(config['iprange']['high'])
+    range_low = int(config['IPRange']['low'])
+    range_high = int(config['IPRange']['high'])
     # defining number of threads running concurrently
     CONST_NUM_THREADS = int(config['thread']['count'])
 
@@ -46,13 +46,17 @@ except ValueError:
 ips = list(range(range_low, range_high, 1))
 # scanning the port only in range of (range_low, range_high)
 range_high = range_high + 1
+# including the last address at 'range_high'
 
 
 def scan(addr):
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     socket.setdefaulttimeout(1)
     result = sock.connect_ex((addr, 135))
+    # 'result' is used as error indicator, port 135 is used for Windows
+    # 137, 138, 139, 445 can also be used
     if result == 0:
+        # tests if IP address is live
         return 1
     else:
         return 0
@@ -61,8 +65,9 @@ def scan(addr):
 def run1(ips, stn1, edn1):
     for ip in xrange(range_low, range_high):
         addr = net3+str(ip)
+        # gets full address
         if (scan(addr)):
-            print addr + " this address is live\n"
+            print addr + " is live\n"
 
 
 # calling function from scanner_thread.py for multithreading
@@ -72,4 +77,4 @@ td2 = datetime.now()
 # Calculates the difference of time, to see how long it took to run the script
 total = td2-td1
 # Printing the information to screen
-print "scanning complete in ", total
+print "scanning completed in ", total
