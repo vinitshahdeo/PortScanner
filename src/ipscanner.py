@@ -77,4 +77,4 @@ td2 = datetime.now()
 # Calculates the difference of time, to see how long it took to run the script
 total = td2-td1
 # Printing the information to screen
-print "scanning completed in ", total
+print "Scanning completed in ", total
