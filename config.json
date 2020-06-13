@@ -3,10 +3,12 @@
         "low": "1",
         "high": "8888"
     },
-
+    "iprange": {
+        "low": "0",
+        "high": "255"
+    },
     "count": "10",
-
-    "thread": { 
-        "count": "32"
+    "thread": {
+        "count": "8"
     }
 }
