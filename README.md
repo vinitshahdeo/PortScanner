@@ -17,14 +17,19 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 ## How to run? :rocket:
 
+### To run Port Scanner:
+
 - **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
 - In the same terminal and **type `npm start`**: This will start multiple servers within the given range.
 
 - **Open another terminal** and **type `python src/scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
-
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
+
+### To run IP Scanner:
+
+- **Open terminal** and **type `python src/ipscanner.py`**: Enter any IP address `XXX.XXX.XXX.YYY`. It will scan all the addresses in the range `XXX.XXX.XXX.0` to `XXX.XXX.XXX.255` and print the addresses which are live.
 
 ## Configuration :gear:
 
@@ -36,6 +41,10 @@ The servers are opened at multiple ports, you can change the low range and high 
         "low": "1",
         "high": "8888"
     },
+    "ipRange": {
+        "low": "0",
+        "high": "255"
+    },
     "count": "10",
     "thread": { 
         "count": 8
@@ -43,8 +52,10 @@ The servers are opened at multiple ports, you can change the low range and high 
 }
 ```
 
-- `low`: _lowest port number (**inclusive**)_
-- `high`: _highest port number (**exclusive**)_
+- `range.low`: _lowest port number (**inclusive**)_
+- `range.high`: _highest port number (**exclusive**)_
+- `ipRange.low`: _lowest IP address range (**inclusive**)_
+- `ipRange.high`: _highest IP address range (**inclusive**)_
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
 
