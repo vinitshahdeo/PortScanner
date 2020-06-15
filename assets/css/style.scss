@@ -3,13 +3,13 @@
 
 @import "jekyll-theme-cayman";
 @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body{
-    font-family: 'Carme', sans-serif;
+  font-family: 'Montserrat', sans-serif; 
 }
 
 h1, h2, h3, h4, h5 {
   font-weight : bold;
-  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Carme', sans-serif;
 }
