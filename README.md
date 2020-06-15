@@ -63,9 +63,9 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/pulls) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo/PortScanner)
 
-> Please read our [Code of Conduct](./CODE_OF_CONDUCT.md).
+> Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](./CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
 
 **1.** Fork [this](https://github.com/vinitshahdeo/PortScanner) repository.
 
