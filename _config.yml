@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: Port Scanner
 show_downloads: true
+include: [ CONTRIBUTING.md, CODE_OF_CONDUCT.md]
 plugins:
   - jemoji
