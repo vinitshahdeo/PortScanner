@@ -45,6 +45,7 @@ a{
     align-items: center;
     width: 30vw;
     margin-left: 12vw;
+
 }
 #scan-port-button{
     margin: 1vw 0 1vw 10.5vw;
@@ -72,9 +73,12 @@ a{
     color: black;
   }
  i{
-     background-color: white;
-     margin-left: 2vw;
-     position: fixed; 
      margin-top: 20vw;
      
  }
+ #history{
+    flex:25%;
+    height:100vh;
+    color:black;
+    padding:2%;
+}

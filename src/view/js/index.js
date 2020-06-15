@@ -1,12 +1,15 @@
-// $(document).ready(function () {
-//     $("#navbar").load("sidenavbar.html");
-//     // $('.tap-target').tapTarget();
+$(document).ready(function () {
+    $("#history").show();
+    $("#timer").hide();
+    // $('.tap-target').tapTarget();
 
 
-// });
+});
 
 function scan_port() {
 
+    $("#history").hide();
+    $("#timer").show();
     var minutesLabel = document.getElementById("minutes");
     var secondsLabel = document.getElementById("seconds");
     var totalSeconds = 0;
