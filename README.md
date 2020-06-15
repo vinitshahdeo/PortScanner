@@ -59,6 +59,54 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
 
+## Contributing
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/pulls) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo/PortScanner)
+
+> Please read our [Code of Conduct](./CODE_OF_CONDUCT.md).
+
+**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](./CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+
+**1.** Fork [this](https://github.com/vinitshahdeo/PortScanner) repository.
+
+**2.** Clone the forked repository.
+
+```bash
+git clone https://github.com/<your-github-username>/PortScanner
+```
+
+**3.** Navigate to the project directory.
+
+```bash
+cd PortScanner
+```
+
+**4.** Create a new branch.
+
+```bash
+git checkout -b <your_branch_name>
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```bash
+git add .
+
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !
+
+**9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) project. :v: :heart:
+
 ## Branching :construction:
 
 - `master` branch is maintained and tested regulary for **Python 2**.
@@ -103,6 +151,7 @@ Range of ports: `1-80`
 #### Performance Analysis 
 
 ![Performance Analysis](./assets/Graph.png)
+
 
 ## Useful resources :books:
 
