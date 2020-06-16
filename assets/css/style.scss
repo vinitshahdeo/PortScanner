@@ -4,12 +4,19 @@
 @import "jekyll-theme-cayman";
 @import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+
 
 body{
   font-family: 'Montserrat', sans-serif; 
 }
 
+h1 {
+  font-family: 'Work Sans', sans-serif;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight : bold;
-  font-family: 'Carme', sans-serif;
+  font-family: 'Andika', sans-serif;
 }
