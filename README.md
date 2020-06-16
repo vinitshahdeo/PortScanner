@@ -117,7 +117,7 @@ git push -u origin <your_branch_name>
 git checkout feature/python3.8
 ```
 
-## Need for Multithreading :heavy_check_mark:
+## Need for Multithreading :white_check_mark:
 
 >The ability of a process to execute multiple threads parallelly is called multithreading. Ideally, multithreading can significantly improve the performance of any program.
 
