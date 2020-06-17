@@ -1,0 +1,23 @@
+---
+---
+
+@import "jekyll-theme-cayman";
+@import url("https://fonts.googleapis.com/css2?family=Carme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andika&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+body{
+  font-family: 'Montserrat', sans-serif; 
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2, h3, h4, h5 {
+  font-weight : bold;
+  font-family: 'Hind Madurai', sans-serif;
+}

@@ -1,7 +1,7 @@
 # Port Scanner 
 ## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master) 
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
@@ -59,9 +59,9 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
 
-## Contributing
+## Contributing :handshake:
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/pulls) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo/PortScanner)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/pulls) [![CodeFactor](https://www.codefactor.io/repository/github/vinitshahdeo/portscanner/badge)](https://www.codefactor.io/repository/github/vinitshahdeo/portscanner) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo/PortScanner)
 
 > Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
@@ -117,7 +117,7 @@ git push -u origin <your_branch_name>
 git checkout feature/python3.8
 ```
 
-## Need for Multithreading :heavy_check_mark:
+## Need for Multithreading :white_check_mark:
 
 >The ability of a process to execute multiple threads parallelly is called multithreading. Ideally, multithreading can significantly improve the performance of any program.
 
