@@ -31,7 +31,7 @@ Pull requests are the best way to propose changes to the codebase (we use [Githu
 
 [![GitHub pull requests](https://img.shields.io/github/issues-pr-closed/vinitshahdeo/PortScanner?color=lightgray&logo=github)](https://github.com/vinitshahdeo/PortScanner/pulls?q=is%3Apr+is%3Aclosed)
 
-In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://github.com/vinitshahdeo/Water-Monitoring-System/blob/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same [MIT License](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
 
 ## Report bugs using Github's [issues](https://github.com/vinitshahdeo/PortScanner/issues)
 
