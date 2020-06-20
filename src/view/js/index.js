@@ -1,19 +1,23 @@
 $(document).ready(function () {
     $("#history").show();
     $("#timer").hide();
-    // $('.tap-target').tapTarget();
 
 
 });
 
+var data = 0;
 function scan_port() {
+    if (data == 0) {
+        data = 1;
+        $("#history").hide();
+        $("#timer").show();
 
-    $("#history").hide();
-    $("#timer").show();
-    var minutesLabel = document.getElementById("minutes");
-    var secondsLabel = document.getElementById("seconds");
-    var totalSeconds = 0;
-    setInterval(setTime, 1000);
+        setInterval(setTime, 1000);
+
+        var minutesLabel = document.getElementById("minutes");
+        var secondsLabel = document.getElementById("seconds");
+        var totalSeconds = 0;
+    }
 
     function setTime() {
         ++totalSeconds;
@@ -30,4 +34,5 @@ function scan_port() {
             return valString;
         }
     }
+
 }
