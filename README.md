@@ -1,7 +1,7 @@
 # Port Scanner 
 ## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master) 
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
@@ -17,14 +17,19 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 ## How to run? :rocket:
 
+### To run Port Scanner:
+
 - **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
 - In the same terminal and **type `npm start`**: This will start multiple servers within the given range.
 
 - **Open another terminal** and **type `python src/scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
-
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
+
+### To run IP Scanner:
+
+- **Open terminal** and **type `python src/ipscanner.py`**: Enter any IP address `XXX.XXX.XXX.YYY`. It will scan all the addresses in the range `XXX.XXX.XXX.0` to `XXX.XXX.XXX.255` and print the addresses which are live.
 
 ## Configuration :gear:
 
@@ -36,6 +41,10 @@ The servers are opened at multiple ports, you can change the low range and high 
         "low": "1",
         "high": "8888"
     },
+    "ipRange": {
+        "low": "0",
+        "high": "255"
+    },
     "count": "10",
     "thread": { 
         "count": 8
@@ -43,10 +52,60 @@ The servers are opened at multiple ports, you can change the low range and high 
 }
 ```
 
-- `low`: _lowest port number (**inclusive**)_
-- `high`: _highest port number (**exclusive**)_
+- `range.low`: _lowest port number (**inclusive**)_
+- `range.high`: _highest port number (**exclusive**)_
+- `ipRange.low`: _lowest IP address range (**inclusive**)_
+- `ipRange.high`: _highest IP address range (**inclusive**)_
 - `count`: _total number of ports_
 - `thread.count`: _total number of concurrent threads_
+
+## Contributing :handshake:
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/pulls) [![CodeFactor](https://www.codefactor.io/repository/github/vinitshahdeo/portscanner/badge)](https://www.codefactor.io/repository/github/vinitshahdeo/portscanner) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/vinitshahdeo/PortScanner)
+
+> Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+
+**1.** Fork [this](https://github.com/vinitshahdeo/PortScanner) repository.
+
+**2.** Clone the forked repository.
+
+```bash
+git clone https://github.com/<your-github-username>/PortScanner
+```
+
+**3.** Navigate to the project directory.
+
+```bash
+cd PortScanner
+```
+
+**4.** Create a new branch.
+
+```bash
+git checkout -b <your_branch_name>
+```
+
+**5.** Make changes in source code.
+
+**6.** Stage your changes and commit
+
+```bash
+git add .
+
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !
+
+**9.** **Congratulations!** :tada: Sit and relax, you've made your contribution to [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) project. :v: :heart:
 
 ## Branching :construction:
 
@@ -58,7 +117,7 @@ The servers are opened at multiple ports, you can change the low range and high 
 git checkout feature/python3.8
 ```
 
-## Need for Multithreading :heavy_check_mark:
+## Need for Multithreading :white_check_mark:
 
 >The ability of a process to execute multiple threads parallelly is called multithreading. Ideally, multithreading can significantly improve the performance of any program.
 
@@ -93,6 +152,7 @@ Range of ports: `1-80`
 
 ![Performance Analysis](./assets/Graph.png)
 
+
 ## Useful resources :books:
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
@@ -114,7 +174,7 @@ Range of ports: `1-80`
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
 
-## Author
+## Admin
 
 |                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
