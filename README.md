@@ -32,14 +32,14 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 #### Install flask
 
 1. In PowerShell,
-     ```js 
-     pip install flask
-     ```
+```js 
+pip install flask
+```
 #### Install virtual environment
 
 2. For python 2, (via pip)
 
-In PowerShell,
+   In PowerShell,
 
 ```js
 python -m pip install --user virtualenv
@@ -51,10 +51,10 @@ python -m virtualenv --help
 #### Create virtual environment
 
 3. Create a project folder and a venv folder within:
-      ```js
-      python -m virtualenv venv
-      \Python27\Scripts\virtualenv.exe venv
-      ```
+```js
+python -m virtualenv venv
+\Python27\Scripts\virtualenv.exe venv
+```
 #### Activate the virtual environment
 
 4. Activate venv,
