@@ -57,7 +57,6 @@ def input():
         with open(get_absolute_path('../config.json')) as config_file:
             config = json.load(config_file)
             print get_absolute_path('../config.json')
-            # '../config.json'
         # defining number of threads running concurrently
         CONST_NUM_THREADS = int(config['thread']['count'])
 
