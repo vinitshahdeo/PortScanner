@@ -14,6 +14,9 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
+    
+- **Pip** `>=9.0.1`
+    - Install pip version from [here](https://pip.pypa.io/en/stable/installing/).
 
 ## How to run? :rocket:
 
@@ -31,30 +34,37 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 #### Install flask
 
+*Make sure you have `Python27\Scripts` path added to your system's environment variables.*
 1. In PowerShell,
+
 ```python 
 pip install flask
 ```
-#### Install virtual environment
 
-2. For python 2, (via pip)
+#### Install virtual environment 
+
+*This step is required only if you are using Python2.7, skip this step when running Python3.X.*
+
+2. For Python 2, (via pip)
 
    In PowerShell,
 
 ```python
-python -m pip install --user virtualenv
-python -m virtualenv --help
+pip install virtualenv
+virtualenv --help
 ```
 
 [Click here](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.
 
 #### Create virtual environment
 
-3. Create a project folder and a venv folder within:
+3. Create a `venv` folder inside `src`,
+
 ```python
 python -m virtualenv venv
 \Python27\Scripts\virtualenv.exe venv
 ```
+
 #### Activate the virtual environment
 
 4. Activate venv,
@@ -69,6 +79,7 @@ venv\Scripts\activate
 pip install flask
 python mainScanner.py
 ```
+6. Go to the port url returned by your terminal.
 
 ### To run IP Scanner:
 
