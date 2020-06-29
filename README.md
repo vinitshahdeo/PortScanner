@@ -208,6 +208,13 @@ Range of ports: `1-80`
 
 ![Performance Analysis](./assets/Graph.png)
 
+## Blog
+
+
+[![Medium Story](https://img.shields.io/static/v1.svg?label=check&message=story%20on%20medium&color=success&logo=medium&style=for-the-badge&logoColor=white&colorA=grey)](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)
+
+Check out [Kashish](https://github.com/kashish121)'s story on medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
+She has explained her experience working on [this](https://vinitshahdeo.github.io/PortScanner/) project.
 
 ## Useful resources :books:
 
