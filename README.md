@@ -31,7 +31,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
 
-### To run Port Scanner: (Via PortScanner UI)
+### To run Port Scanner: (Via UI)
 
 #### Install flask
 
@@ -69,13 +69,13 @@ python -m virtualenv venv
 
 #### Activate the virtual environment
 
-**4**. Activate venv,
+**4**. Activate `venv`,
 
 ```ps
 venv\Scripts\activate
 ```
 
-**5**. Run 'mainScanner.py,
+**5**. Run `mainScanner.py`,
 
 ```ps
 pip install flask
