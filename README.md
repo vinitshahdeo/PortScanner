@@ -15,10 +15,13 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
+    
+- **Pip** `>=9.0.1`
+    - Install pip version from [here](https://pip.pypa.io/en/stable/installing/).
 
 ## How to run? :rocket:
 
-### To run Port Scanner:
+### To run Port Scanner: (Via Terminal)
 
 - **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
@@ -27,6 +30,57 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 - **Open another terminal** and **type `python src/scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
+
+### To run Port Scanner: (Via PortScanner UI)
+
+#### Install flask
+
+*Make sure you have `Python27\Scripts` path added to your system's environment variables.*
+1. In PowerShell,
+
+```python 
+pip install flask
+```
+
+#### Install virtual environment 
+
+*This step is required only if you are using Python2.7, skip this step when running Python3.X.*
+
+2. For Python 2, (via pip)
+
+   In PowerShell,
+
+```python
+pip install virtualenv
+virtualenv --help
+```
+
+[Click here](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.
+
+#### Create virtual environment
+
+3. Create a `venv` folder inside `src`,
+
+```python
+python -m virtualenv venv
+\Python27\Scripts\virtualenv.exe venv
+```
+
+#### Activate the virtual environment
+
+4. Activate venv,
+
+```python
+venv\Scripts\activate
+```
+
+5. Run 'mainScanner.py,
+
+```python
+pip install flask
+python mainScanner.py
+```
+6. Go to the port url returned by your terminal.
 
 ### To run IP Scanner:
 
