@@ -16,7 +16,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
     
-- **Pip** `>=9.0.1`
+- **Pip** `>= v9.0.1`
     - Install pip version from [here](https://pip.pypa.io/en/stable/installing/).
 
 ## How to run? :rocket:
