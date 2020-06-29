@@ -33,7 +33,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 ### To run Port Scanner: (Via UI)
 
-#### Install flask
+#### Install [flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)
 
 > *Make sure you have `Python27\Scripts` path added to your system's environment variables.*
 
@@ -214,6 +214,7 @@ Range of ports: `1-80`
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `src/scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `src/scanner_thread.py`
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/): A micro web framework written in Python. Check `src/mainScanner.py`
 
 ## [Contributors](https://github.com/vinitshahdeo/PortScanner/graphs/contributors) :trophy:
 
