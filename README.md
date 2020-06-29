@@ -35,8 +35,8 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 #### Install flask
 
-*Make sure you have `Python27\Scripts` path added to your system's environment variables.*
-1. In PowerShell,
+> *Make sure you have `Python27\Scripts` path added to your system's environment variables.*
+**1**. In PowerShell,
 
 ```python 
 pip install flask
@@ -44,9 +44,9 @@ pip install flask
 
 #### Install virtual environment 
 
-*This step is required only if you are using Python2.7, skip this step when running Python3.X.*
+> *This step is required only if you are using Python2.7, skip this step when running Python3.X.*
 
-2. For Python 2, (via pip)
+**2**. For Python 2, (via pip)
 
    In PowerShell,
 
@@ -55,11 +55,11 @@ pip install virtualenv
 virtualenv --help
 ```
 
-[Click here](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.
+> *Kindly [check this](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.*
 
 #### Create virtual environment
 
-3. Create a `venv` folder inside `src`,
+**3**. Create a `venv` folder inside `src`,
 
 ```python
 python -m virtualenv venv
@@ -68,19 +68,19 @@ python -m virtualenv venv
 
 #### Activate the virtual environment
 
-4. Activate venv,
+**4**. Activate venv,
 
 ```python
 venv\Scripts\activate
 ```
 
-5. Run 'mainScanner.py,
+**5**. Run 'mainScanner.py,
 
 ```python
 pip install flask
 python mainScanner.py
 ```
-6. Go to the port url returned by your terminal.
+**6**. Go to the port url returned by your terminal.
 
 ### To run IP Scanner:
 
