@@ -24,4 +24,4 @@ Please delete options that are not relevant.
 - [ ] My changes generate no new warnings
 - [ ] I have added tests that prove my fix is effective or that my feature works
 - [ ] Any dependent changes have been merged and published in downstream modules
-- [ ] I have added all the three reviewers: @vinitshahdeo, @kashish121 & ishika1727
+- [ ] I have added all the three reviewers: @vinitshahdeo, @kashish121 & @ishika1727
