@@ -218,7 +218,7 @@ She has shared her experience working on [this](https://vinitshahdeo.github.io/P
 
 ## Open Source Programs
 
-[![leacode-logo](./assets/leapcode-logo-full-png.png)](https://www.leapcode.io/)
+[![leacode-logo](./assets/leapcode-logo.png)](https://www.leapcode.io/)
 
 We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contribute to open-source projects right from your first PR to working on major projects. It's still under construction and hopeful to have their platform up pretty soon. [Click here](https://www.leapcode.io/) to get an early access.
 
