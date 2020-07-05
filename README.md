@@ -213,8 +213,11 @@ Range of ports: `1-80`
 
 [![Medium Story](https://img.shields.io/static/v1.svg?label=check&message=story%20on%20medium&color=success&logo=medium&style=for-the-badge&logoColor=white&colorA=grey)](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)
 
-Check out [Kashish](https://github.com/kashish121)'s story on medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
+- Check out [Kashish](https://github.com/kashish121)'s story on Medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
 She has shared her experience working on [this](https://vinitshahdeo.github.io/PortScanner/) project - **How it marks the commencement of her perennial journey to open source?**
+
+- Check out [Ishika](https://github.com/ishika1727)'s story on Medium: [**`git push`**: You just need a little PUSH](https://medium.com/@ishikadubey2000/look-mom-im-on-github-521bb6c1f51d)!
+She has shared her experience in working on [this](https://vinitshahdeo.github.io/PortScanner/) project and making her identity in the open-source world.
 
 ## Open Source Programs
 
