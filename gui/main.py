@@ -1,11 +1,6 @@
-import sys 
-
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-import time
-
-
 import socket
 import subprocess
 import sys
@@ -20,14 +15,10 @@ class MainWindow(QMainWindow):
 
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
-
         self.setWindowTitle("Port Scanner")
         self.initUI()
         
-        
-
     def initUI(self):
-
         font = QFont()
         font.setFamily("Consolas")
         font.setPointSize(12)
@@ -83,15 +74,12 @@ class MainWindow(QMainWindow):
         self.statusBar().showMessage('Ready')
         self.statusBar().setStyleSheet("background-color : grey")
 
-
         self.createMenuBar()
 
-        
         self.setFixedSize(640, 480)
         self.show()
 
     def createProgressBar(self):
-
         self.scanProgressBar = QProgressBar(self)
         self.scanProgressBar.setGeometry(QRect(130, 220, 401, 23))
         self.scanProgressBar.setHidden(False)
@@ -99,15 +87,14 @@ class MainWindow(QMainWindow):
         #self.startProgressBar()
 
     def startProgressBar(self):
+
         self.threadClass = self.ThreadClass()
         self.threadClass.finished.connect(self.scanCompleted)
         self.threadClass.start()
         self.scanProgressBar.setValue(0)
     
-
         lowRange = int(self.lowRangeSpinner.value())
         highRange = int(self.highRangeSpinner.value())
-
 
         hostAddress = str(self.hostText.toPlainText())
         self.threadClass.remoteServer = hostAddress
@@ -122,12 +109,12 @@ class MainWindow(QMainWindow):
         self.resultTextField.insertPlainText(log)
 
     def createMenuBar(self):
-        exitAct = QAction(QIcon('exit.png'), '&Exit', self)
+        exitAct = QAction(self.style().standardIcon(QStyle.SP_FileDialogBack), '&Exit', self)
         exitAct.setShortcut('Ctrl+Q')
         exitAct.setStatusTip('Exit application')
         exitAct.triggered.connect(qApp.quit)
 
-        saveAct = QAction(QIcon('save.png'), '&Save Config', self)
+        saveAct = QAction(self.style().standardIcon(QStyle.SP_DialogSaveButton), '&Save Config', self)
         saveAct.setShortcut('Ctrl+S')
         saveAct.setStatusTip('Save Configuration')
         saveAct.triggered.connect(self.saveConfig)
@@ -139,6 +126,7 @@ class MainWindow(QMainWindow):
 
     def scanCompleted(self):
         self.statusBar().showMessage('Scan Complete')
+
     def scanButtonClicked(self, *args):
         if self.scanInProgress:
             self.scanInProgress = False
@@ -154,7 +142,9 @@ class MainWindow(QMainWindow):
     def updateProgressBar(self, val):
         self.scanProgressBar.setValue(val)
         self.statusBar().showMessage('Scanning. Ports Scanned: '+str(self.threadClass.ports_scanned))
+    
     def saveConfig(self, *args):
+        #Need to save current configuration here
         print("Saved config.")
 
     class ThreadClass(QThread):
@@ -164,7 +154,6 @@ class MainWindow(QMainWindow):
         highRange = 100
         totalports = highRange - lowRange
         remoteServer = None
-
         ports_scanned = 0
 
         def scan(self, ports, range_low, range_high):
@@ -209,14 +198,12 @@ class MainWindow(QMainWindow):
             else:
                 print("Remote Server not defined.")
                 self.log_message.emit("Remote Server not defined."+"\n")
-
                 return
 
             print ("-" * 60)
             print ("Please wait, scanning remote host....", remoteServerIP)
             print ("-" * 60)
 
-            
             self.log_message.emit("-"*60+"\n")
             self.log_message.emit("Please wait, scanning remote host.... "+str(remoteServerIP) + "\n")
             self.log_message.emit("-"*60+"\n")
@@ -225,10 +212,8 @@ class MainWindow(QMainWindow):
             ports = list(range(self.lowRange, self.highRange))
 
             split_processing(ports, 8, self.scan, self.lowRange, self.highRange)
-
             # Checking the time again
             t2 = datetime.now()
-
             # Calculates the difference of time, to see how long it took to run the script
             total =  t2 - t1
 
@@ -236,13 +221,9 @@ class MainWindow(QMainWindow):
             print ('Scanning Completed in: ', total)
             self.log_message.emit('Scanning Completed in: '+ str(total)+"\n")
 
-            
-        
-
 app = QApplication(sys.argv)
 
 window = MainWindow()
 window.show()
-
 
 app.exec_()
