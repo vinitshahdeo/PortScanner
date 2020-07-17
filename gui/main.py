@@ -29,8 +29,8 @@ class MainWindow(QMainWindow):
         self.scanBtn.setGeometry(QRect(280, 180, 75, 23))
         self.scanBtn.clicked.connect(self.scanButtonClicked)
 
-        self.hostText = QTextEdit(self)
-        self.hostText.setGeometry(QRect(330, 41, 151, 31))
+        self.hostTextField = QTextEdit(self)
+        self.hostTextField.setGeometry(QRect(330, 41, 151, 31))
 
         self.hostLabel = QLabel("Host Address", self)
         self.hostLabel.setGeometry(QRect(180, 40, 121, 31))
@@ -84,19 +84,18 @@ class MainWindow(QMainWindow):
         self.scanProgressBar.setGeometry(QRect(130, 220, 401, 23))
         self.scanProgressBar.setHidden(False)
         self.scanProgressBar.setValue(0)
-        #self.startProgressBar()
+        #self.startThread()
 
-    def startProgressBar(self):
-
+    def startThread(self):
         self.threadClass = self.ThreadClass()
-        self.threadClass.finished.connect(self.scanCompleted)
+        self.threadClass.finished.connect(self.onScanCompleted)
         self.threadClass.start()
         self.scanProgressBar.setValue(0)
     
         lowRange = int(self.lowRangeSpinner.value())
         highRange = int(self.highRangeSpinner.value())
 
-        hostAddress = str(self.hostText.toPlainText())
+        hostAddress = str(self.hostTextField.toPlainText())
         self.threadClass.remoteServer = hostAddress
 
         self.threadClass.lowRange = lowRange
@@ -124,20 +123,29 @@ class MainWindow(QMainWindow):
         fileMenu.addAction(saveAct)
         fileMenu.addAction(exitAct)
 
-    def scanCompleted(self):
-        self.statusBar().showMessage('Scan Complete')
-
-    def scanButtonClicked(self, *args):
-        if self.scanInProgress:
+    def terminate_scan(self):
+        if (self.scanInProgress):
             self.scanInProgress = False
             self.scanBtn.setText("Scan")
             self.threadClass.terminate()
             self.statusBar().showMessage("Ready")
+
+    def start_scan(self):
+        self.scanInProgress = True
+        self.startThread()
+        self.scanBtn.setText("Stop")
+        self.statusBar().showMessage('Scan Started')
+
+    def onScanCompleted(self):
+        self.statusBar().showMessage('Scan Complete')
+        self.scanBtn.setText("Scan")
+        scanInProgress = False
+
+    def scanButtonClicked(self, *args):
+        if self.scanInProgress:
+            self.terminate_scan()
         else:
-            self.scanInProgress = True
-            self.startProgressBar()
-            self.scanBtn.setText("Stop")
-            self.statusBar().showMessage('Scan Started')
+            self.start_scan()
 
     def updateProgressBar(self, val):
         self.scanProgressBar.setValue(val)
@@ -155,6 +163,7 @@ class MainWindow(QMainWindow):
         totalports = highRange - lowRange
         remoteServer = None
         ports_scanned = 0
+        threadCount = 8
 
         def scan(self, ports, range_low, range_high):
             if self.remoteServer is not None:
@@ -194,7 +203,17 @@ class MainWindow(QMainWindow):
 
         def run(self):
             if self.remoteServer is not None:
-                remoteServerIP  = socket.gethostbyname(self.remoteServer)
+                try:
+                    remoteServerIP  = socket.gethostbyname(self.remoteServer)
+                except socket.gaierror:
+                    print ('Hostname could not be resolved. Exiting')
+                    self.log_message.emit('Hostname could not be resolved. Exiting'+"\n")
+                    return
+                except socket.error:
+                    print ("Couldn't connect to server")
+                    self.log_message.emit("Couldn't connect to server"+"\n")
+                    return  
+
             else:
                 print("Remote Server not defined.")
                 self.log_message.emit("Remote Server not defined."+"\n")
@@ -211,7 +230,7 @@ class MainWindow(QMainWindow):
             t1 = datetime.now()
             ports = list(range(self.lowRange, self.highRange))
 
-            split_processing(ports, 8, self.scan, self.lowRange, self.highRange)
+            split_processing(ports, self.threadCount, self.scan, self.lowRange, self.highRange)
             # Checking the time again
             t2 = datetime.now()
             # Calculates the difference of time, to see how long it took to run the script
