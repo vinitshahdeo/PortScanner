@@ -44,6 +44,29 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `high`: _highest port number (**exclusive**)_
 - `count`: _total number of ports_
 
+### To run Port Scanner: (Via GUI)
+*Gui support is only available for python3*
+
+#### Install [PyQt5](https://doc.qt.io/qtforpython)
+
+*Make sure you have python3 path added to your system's environment variables.*
+> 
+**1**. In PowerShell,
+
+```ps 
+pip install PyQt5
+```
+
+#### Run  'gui/main.py' from python
+
+**2**. From project root, run the following command to start the GUI application
+
+   In PowerShell,
+
+```ps
+python gui/main.py
+```
+
 ## Useful resources 
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
