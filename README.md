@@ -25,25 +25,6 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
-
-## Configuration
-
-The servers are opened at multiple ports, you can change the low range and high range for the ports to be listened by the Express server.
-
-```js
-{
-    "range": {
-        "low": "1",
-        "high": "8888"
-    },
-    "count": "10"
-}
-```
-
-- `low`: _lowest port number (**inclusive**)_
-- `high`: _highest port number (**exclusive**)_
-- `count`: _total number of ports_
-
 ### To run Port Scanner: (Via GUI)
 *Gui support is only available for python3*
 
@@ -66,6 +47,26 @@ pip install PyQt5
 ```ps
 python gui/main.py
 ```
+
+## Configuration
+
+The servers are opened at multiple ports, you can change the low range and high range for the ports to be listened by the Express server.
+
+```js
+{
+    "range": {
+        "low": "1",
+        "high": "8888"
+    },
+    "count": "10"
+}
+```
+
+- `low`: _lowest port number (**inclusive**)_
+- `high`: _highest port number (**exclusive**)_
+- `count`: _total number of ports_
+
+
 
 ## Useful resources 
 
