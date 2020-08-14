@@ -6,16 +6,16 @@ from datetime import datetime
 import json
 import os
 import threading
-import __builtin__
+import builtins
 from multi.scanner_thread import split_processing
 
-exc = getattr(__builtin__, "IOError", "FileNotFoundError")
+exc = getattr(builtins, "IOError", "FileNotFoundError")
 
 # Clear the screen
 subprocess.call('clear', shell=True)
 
 # Ask for input
-remoteServer = raw_input("Enter a remote host to scan: ")
+remoteServer = input("Enter a remote host to scan: ")
 remoteServerIP = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
