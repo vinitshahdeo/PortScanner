@@ -19,13 +19,17 @@ while(ports.size != countOfPorts) { // adding the required number of ports
     ports.add(randNumGenerator(low, high));
 }
 
-console.log(`Starting server at ${countOfPorts} different ports....`);
+console.log(`Starting server at ${countOfPorts} different ports....\n`);
 
 let portsArray = [...ports];
 
 for (let index = 0; index < portsArray.length; index++) {
     
     express().listen(portsArray[index], () => {
-        console.log('\n.......Started a server........\n');
-    });
+        console.log('--Server started at port '+portsArray[index]);
+        if(index==portsArray.length-1)
+        {
+            console.log("\n\nStop these servers only after doing port analysis !!!\n\n")
+        }
+    })
 }
