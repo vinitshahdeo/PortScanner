@@ -15,6 +15,9 @@ let countOfPorts = config.count, // total number of ports to open
 // generating the ports
 let ports = new Set(); // using set because ports can't be duplicate
 
+if(high-low<=countOfPorts){      //Range should be strictly greater than count 
+    throw "Invalid Config: (range.high - range.low) should always be greater than count" 
+}
 while(ports.size != countOfPorts) { // adding the required number of ports
     ports.add(randNumGenerator(low, high));
 }
