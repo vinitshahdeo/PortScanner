@@ -19,7 +19,7 @@ def homepage():
     return render_template('index.html')
 
 
-exc = getattr(__builtin__, "IOError", "FileNotFoundError")
+exc = getattr(builtins, "IOError", "FileNotFoundError")
 
 # Clear the screen
 # subprocess.call('clear', shell=True)
