@@ -3,5 +3,12 @@
         "low": "1",
         "high": "8888"
     },
-    "count": "10"
+    "ipRange": {
+        "low": "0",
+        "high": "255"
+    },
+    "count": "10",
+    "thread": {
+        "count": "8"
+    }
 }
