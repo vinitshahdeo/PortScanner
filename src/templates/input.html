@@ -82,6 +82,24 @@
                         <input type="submit" value="Scan Now" id="scan-port-button" class="lighten-3 btn-flat">
                     </div>
                 </form>
+                <h5>Scanning remote host {{ host }} between range {{ range_low }} to {{ range_high }} :</h5>
+                <table class="highlight responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Port Number</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for port in portnum %}
+                        <tr>
+                            <td>{{ port }}</td>
+                            <td>Open</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <h5>Scanning completed in {{ total }} time.</h5>
             </div>
         </div>
     </div>
