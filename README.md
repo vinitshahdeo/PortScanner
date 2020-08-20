@@ -1,4 +1,4 @@
-<img src="./assets/logo_2.png" width="30%" height="20%"/>
+<img src="./assets/logo_2.png" width="30%" height="20%"/> 
 # Port Scanner   
 ## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
