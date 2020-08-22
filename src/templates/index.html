@@ -107,7 +107,24 @@
         <span id="timer-head">History</span>
         <div id="line2"></div>
         <span id="timer-text">Last 10 scans</span>
-    </div>
+        <table>
+
+          <thead>
+            <td>Host Scanned</td>
+            <td>Low</td>
+            <td>High</td>
+         </thead>
+
+         {% for row in rows %}
+            <tr>
+              <td>{{row["RemoteServer"]}}</td>
+               <td>{{row["LowRange"]}}</td>
+               <td>{{ row["HighRange"]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+</div>
+
 
 
     <div id="timer">
