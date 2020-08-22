@@ -10,13 +10,20 @@ import __builtin__
 from multi.scanner_thread import split_processing
 import logging
 from flask import Flask, render_template, request, redirect, url_for
+import sqlite3 as sql
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def homepage():
-    return render_template('index.html')
+    # displaying previous scan records
+    con = sql.connect("database.db")
+    con.row_factory = sql.Row
+    cur = con.cursor()
+    cur.execute("select * from history ORDER BY rowid DESC LIMIT 10")
+    rows = cur.fetchall();
+    return render_template('index.html', rows = rows)
 
 
 exc = getattr(__builtin__, "IOError", "FileNotFoundError")
@@ -35,6 +42,13 @@ def input():
         range_high = int(request.form["range_high"])
     else:
         return EnvironmentError
+
+    #adding current scan to db
+    with sql.connect("database.db") as con:
+            cur = con.cursor()
+            cur.execute("INSERT INTO history (RemoteServer,LowRange,HighRange) VALUES (?,?,?)",(remoteServer, range_low, range_high))
+            con.commit()
+
 
     # Print a nice banner with information on which host we are about to scan
     print "-" * 60
@@ -61,9 +75,9 @@ def input():
         CONST_NUM_THREADS = int(config['thread']['count'])
 
     except IOError:
-        print("config.json file not found")
+        print "config.json file not found"
     except ValueError:
-        print("Kindly check the json file for appropriateness of range")
+        print "Kindly check the json file for appropriateness of range"
 
     ports = list(range(range_low, range_high, 1))
     # scanning the port only in range of (range_low, range_high)
@@ -103,7 +117,14 @@ def input():
 
     # Printing the information to screen
     print 'Scanning Completed in: ', total
-    return render_template('index.html', portnum=portnum, host=remoteServerIP, range_low=range_low, range_high=range_high, total=total)
+
+    #displaying updated scan records
+    con = sql.connect("database.db")
+    con.row_factory = sql.Row
+    cur = con.cursor()
+    cur.execute("select * from history ORDER BY rowid DESC LIMIT 10")
+    rows = cur.fetchall();
+    return render_template('index.html', rows = rows, portnum=portnum, host=remoteServerIP, range_low=range_low, range_high=range_high, total=total)
 
 
 if __name__ == '__main__':
