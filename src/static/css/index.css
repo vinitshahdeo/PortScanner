@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Oswald&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+#navbar{
+    flex:20%;
+    font-family: 'Oswald', sans-serif;
+}
+.navtitle{
+    font-family: 'Hind Madurai', sans-serif;
+}
+#showpage{
+    margin-left: 3%;
+    padding-top: 2%;
+    flex:55%;
+    font-size: 30px;
+    height: 100vh;
+    margin-right: 3%;
+    font-family: 'Oswald', sans-serif;
+}
+#showtitle{
+    font-family: 'Hind Madurai', sans-serif;
+}
+#timer{
+    flex:25%;
+    height:100vh;
+    color:black;
+    padding:2%;
+}
+#timer-head{
+    font-size: 30px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#timer-text{
+    margin: 1% 0 2% 0;
+    font-family: 'Oswald', sans-serif;
+}
+a{
+    margin: 2% 0 2% 0;
+}
+#line{
+    border-bottom: 2px solid #3b6978;
+    margin-top: 3%;
+}
+#line2{
+    border-bottom:2.5px solid #3b6978;
+    margin-top: 1.5vw;
+    margin-bottom:1.5vw ;
+}
+#form{
+    margin-top: 5%;
+    font-size: 10px;
+    align-items: center;
+    width: 30vw;
+    margin-left: 12vw;
+}
+#scan-port-button{
+    margin: 1vw 0 1vw 10.5vw;
+    background-color: #3b6978;
+    color: white;
+}
+#time-taken{
+    margin-top: 2%;
+    font-family: 'Oswald', sans-serif;
+}
+#seconds , #minutes {
+    font-size: 5em;
+    background-color:#3b6978;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#colon {
+    font-size: 5em;
+    color: black;
+}
+i{
+    margin-top: 20vw;
+}
+#history{
+    flex:25%;
+    height:100vh;
+    color:black;
+    padding:2%;
+}
