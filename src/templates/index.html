@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="static\css\index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="static\js\index.js" type="text/javascript"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div id="navbar">
+        <ul class="sidenav sidenav-fixed">
+            <li>
+                <div class="user-view">
+                    <div class="background" style="background-color:  #3b6978;">
+                        <!-- <img src="images/office.jpg"> -->
+                    </div>
+                    <a href="#user"><img class="circle" src=""></a>
+                    <a href="#name"><span class="white-text name" style="padding-bottom: 5%;" class="navtitle">Port
+                            Scanner<br></span></a>
+                </div>
+            </li>
+            <li><a href="#!">Scan Port</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
+            <center>
+                <a href="https://github.com/vinitshahdeo/PortScanner">
+                    <i class="fa fa-github" style=" font-size:48px; color:#3b6978">
+                    </i>
+                </a>
+            </center>
+
+        </ul>
+
+        <script type="text/javascript" src="static/js/materialize.min.js"></script>
+    </div>
+    <div id="showpage">
+        <span id="showtitle">Port Scanner</span>
+        <div id="line"></div>
+        <div id="form">
+            <div class="row">
+                <form class="col s12" action="/input" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="host" name="host" type="text" class="validate" placeholder="For eg: google.com">
+                            <label for="host" style="color: black;font-size: 20px;">Host to Scan</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the website you want
+                                to search open ports for</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="For eg: 1" id="first_name" type="number" name="range_low" class="validate">
+                            <label for="first_name" style="color: black;font-size: 20px;">Low</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the lower range
+                                (inclusive)</span>
+
+                        </div>
+                        <div class="input-field col s6">
+                            <input placeholder="For eg: 8888" id="last_name" type="number" name="range_high" class="validate">
+                            <label for="last_name" style="color: black;font-size: 20px;">High</label>
+                            <span class="helper-text" data-error="wrong" data-success="right">Enter the higher range
+                                (exclusive)</span>
+
+                        </div>
+                    </div>
+                    <div>
+                        <!-- <a id="scan-port-button" class="lighten-3 btn-flat" onclick="scanPort()">Scan Now</a> -->
+                        <input type="submit" value="Scan Now" id="scan-port-button" class="lighten-3 btn-flat">
+                    </div>
+                </form>
+                <h5>Scanning remote host {{ host }} between range {{ range_low }} to {{ range_high }} :</h5>
+                <table class="highlight responsive-table">
+                    <thead>
+                        <tr>
+                            <th>Port Number</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for port in portnum %}
+                        <tr>
+                            <td>{{ port }}</td>
+                            <td>Open</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <h5>Scanning completed in {{ total }} time.</h5>
+            </div>
+        </div>
+    </div>
+    <div id="history">
+        <span id="timer-head">History</span>
+        <div id="line2"></div>
+        <span id="timer-text">Last 10 scans</span>
+    </div>
+
+
+    <div id="timer">
+        <span id="timer-head">Timer</span>
+        <div id="line2"></div>
+        <span id="timer-text">Time taken to fetch results</span>
+
+        <div id="time-taken">
+            <label id="minutes">00</label>
+            <label id="colon">:</label>
+            <label id="seconds">00</label>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
