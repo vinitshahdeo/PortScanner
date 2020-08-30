@@ -126,7 +126,14 @@
         </div>
     </div>
 
-
+    <script type="text/javascript">
+        var showResult = "{{showResult}}";
+        if (showResult)
+            $(".result-list").show();
+        else
+            $(".result-list").hide();
+    </script>
+    
 </body>
 
 </html>
