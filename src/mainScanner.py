@@ -103,7 +103,7 @@ def input():
 
     # Printing the information to screen
     print 'Scanning Completed in: ', total
-    return render_template('input.html', portnum=portnum, host=remoteServerIP, range_low=range_low, range_high=range_high, total=total)
+    return render_template('index.html', portnum=portnum, host=remoteServerIP, range_low=range_low, range_high=range_high, total=total)
 
 
 if __name__ == '__main__':

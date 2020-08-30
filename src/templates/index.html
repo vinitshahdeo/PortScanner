@@ -63,14 +63,16 @@
 
                     <div class="row">
                         <div class="input-field col s6">
-                            <input placeholder="For eg: 1" id="first_name" type="number" name="range_low" class="validate">
+                            <input placeholder="For eg: 1" id="first_name" type="number" name="range_low"
+                                class="validate">
                             <label for="first_name" style="color: black;font-size: 20px;">Low</label>
                             <span class="helper-text" data-error="wrong" data-success="right">Enter the lower range
                                 (inclusive)</span>
 
                         </div>
                         <div class="input-field col s6">
-                            <input placeholder="For eg: 8888" id="last_name" type="number" name="range_high" class="validate">
+                            <input placeholder="For eg: 8888" id="last_name" type="number" name="range_high"
+                                class="validate">
                             <label for="last_name" style="color: black;font-size: 20px;">High</label>
                             <span class="helper-text" data-error="wrong" data-success="right">Enter the higher range
                                 (exclusive)</span>
@@ -84,6 +86,24 @@
                 </form>
             </div>
         </div>
+            <h5>Scanning remote host {{ host }} between range {{ range_low }} to {{ range_high }} :</h5>
+            <table class="highlight responsive-table">
+                <thead>
+                    <tr>
+                        <th>Port Number</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for port in portnum %}
+                    <tr>
+                        <td>{{ port }}</td>
+                        <td>Open</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <h5>Scanning completed in {{ total }} time.</h5>
     </div>
     <div id="history">
         <span id="timer-head">History</span>
