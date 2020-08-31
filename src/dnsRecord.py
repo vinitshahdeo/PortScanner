@@ -2,7 +2,6 @@ import socket
 import dns
 import dns.resolver
 
-
 remoteServer = raw_input("Enter a remote host to scan: ")
 print "\n\n"
 print "==============================================================="
