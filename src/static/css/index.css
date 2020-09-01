@@ -7,7 +7,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 #navbar{
-    flex:20%;
+    flex:15%;
     font-family: 'Oswald', sans-serif;
 }
 .navtitle{
@@ -78,7 +78,7 @@ a{
     font-size: 5em;
     color: black;
 }
-i{
+#github{
     margin-top: 20vw;
 }
 #history{
