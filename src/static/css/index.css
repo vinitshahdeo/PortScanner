@@ -68,15 +68,17 @@ a{
     font-family: 'Oswald', sans-serif;
 }
 #seconds , #minutes {
-    font-size: 2em;
+    font-size: 2.5em;
     background-color:#3b6978;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 7px;
 }
 #colon {
-    font-size: 2em;
+    font-size: 2.5em;
     color: black;
+    padding: 7px;
 }
 i{
     margin-top: 20vw;
