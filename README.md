@@ -15,10 +15,13 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
+    
+- **Pip** `>= v9.0.1`
+    - Install pip from [here](https://pip.pypa.io/en/stable/installing/).
 
 ## How to run? :rocket:
 
-### To run Port Scanner:
+### To run Port Scanner: (Via Terminal)
 
 - **Open terminal** and **type `npm install`**: This will install the dependencies ([Express](https://expressjs.com)).
 
@@ -27,6 +30,58 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 - **Open another terminal** and **type `python src/scanner.py`**: Enter `localhost` or `127.0.0.1`. It will scan all the ports and print the open ports.
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
+
+### To run Port Scanner: (Via UI)
+
+#### Install [flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)
+
+> *Make sure you have `Python27\Scripts` path added to your system's environment variables.*
+
+**1**. In PowerShell,
+
+```ps 
+pip install flask
+```
+
+#### Install virtual environment 
+
+> *This step is required only if you are using Python2.7, skip this step when running Python3.X.*
+
+**2**. For Python 2, (via pip)
+
+   In PowerShell,
+
+```ps
+pip install virtualenv
+virtualenv --help
+```
+
+> *Kindly [check this](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.*
+
+#### Create virtual environment
+
+**3**. Create a `venv` folder inside `src`,
+
+```ps
+python -m virtualenv venv
+\Python27\Scripts\virtualenv.exe venv
+```
+
+#### Activate the virtual environment
+
+**4**. Activate `venv`,
+
+```ps
+venv\Scripts\activate
+```
+
+**5**. Run `mainScanner.py`,
+
+```ps
+pip install flask
+python mainScanner.py
+```
+**6**. Go to the port url returned by your terminal.
 
 ### To run IP Scanner:
 
@@ -153,12 +208,30 @@ Range of ports: `1-80`
 
 ![Performance Analysis](./assets/Graph.png)
 
+## Blog
+
+
+[![Medium Story](https://img.shields.io/static/v1.svg?label=check&message=story%20on%20medium&color=success&logo=medium&style=for-the-badge&logoColor=white&colorA=grey)](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)
+
+- Check out [Kashish](https://github.com/kashish121)'s story on Medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
+She has shared her experience working on [this](https://vinitshahdeo.github.io/PortScanner/) project - **How it marks the commencement of her perennial journey to open source?**
+
+- Check out [Ishika](https://github.com/ishika1727)'s story on Medium: [**`git push`**: You just need a little PUSH](https://medium.com/@ishikadubey2000/look-mom-im-on-github-521bb6c1f51d)!
+She has shared her experience in working on [this](https://vinitshahdeo.github.io/PortScanner/) project and making her identity in the open-source world.
+
+## Open Source Programs
+
+<a href="https://www.leapcode.io/"><img src="./assets/leapcode.png" width="40%" height="10%"/></a>
+
+We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contribute to open-source projects right from your first PR to working on major projects. It's still under construction and hopeful to have their platform up pretty soon. [Click here](https://www.leapcode.io/) to get an early access.
+
 
 ## Useful resources :books:
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `src/scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `src/scanner_thread.py`
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/): A micro web framework written in Python. Check `src/mainScanner.py`
 
 ## [Contributors](https://github.com/vinitshahdeo/PortScanner/graphs/contributors) :trophy:
 
@@ -177,7 +250,7 @@ Range of ports: `1-80`
 
 ## Admin
 
-|                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
+|                                                                                         <a href="https://www.eatmy.news/2020/06/code-like-you-eat-i-mean-code-daily-as.html"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
 | <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
