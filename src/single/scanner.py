@@ -9,7 +9,7 @@ import json
 subprocess.call('clear', shell=True)
 
 # Pull port range from config.json
-with open("config.json") as json_file:
+with open("../../config.json") as json_file:
     data = json.load(json_file)
     loRange = int(data['range']['low'])
     hiRange = int(data['range']['high'])
