@@ -1,7 +1,8 @@
 # Port Scanner 
 ## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
-[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master) 
+[![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
+
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
 
@@ -15,8 +16,8 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
     
-- **Pip** `>=9.0.1`
-    - Install pip version from [here](https://pip.pypa.io/en/stable/installing/).
+- **Pip** `>= v9.0.1`
+    - Install pip from [here](https://pip.pypa.io/en/stable/installing/).
 
 ## How to run? :rocket:
 
@@ -30,56 +31,57 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
 
-### To run Port Scanner: (Via PortScanner UI)
+### To run Port Scanner: (Via UI)
 
-#### Install flask
+#### Install [flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)
 
-*Make sure you have `Python27\Scripts` path added to your system's environment variables.*
-1. In PowerShell,
+> *Make sure you have `Python27\Scripts` path added to your system's environment variables.*
 
-```python 
+**1**. In PowerShell,
+
+```ps 
 pip install flask
 ```
 
 #### Install virtual environment 
 
-*This step is required only if you are using Python2.7, skip this step when running Python3.X.*
+> *This step is required only if you are using Python2.7, skip this step when running Python3.X.*
 
-2. For Python 2, (via pip)
+**2**. For Python 2, (via pip)
 
    In PowerShell,
 
-```python
+```ps
 pip install virtualenv
 virtualenv --help
 ```
 
-[Click here](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.
+> *Kindly [check this](https://virtualenv.pypa.io/en/latest/installation.html) if pip installation fails.*
 
 #### Create virtual environment
 
-3. Create a `venv` folder inside `src`,
+**3**. Create a `venv` folder inside `src`,
 
-```python
+```ps
 python -m virtualenv venv
 \Python27\Scripts\virtualenv.exe venv
 ```
 
 #### Activate the virtual environment
 
-4. Activate venv,
+**4**. Activate `venv`,
 
-```python
+```ps
 venv\Scripts\activate
 ```
 
-5. Run 'mainScanner.py,
+**5**. Run `mainScanner.py`,
 
-```python
+```ps
 pip install flask
 python mainScanner.py
 ```
-6. Go to the port url returned by your terminal.
+**6**. Go to the port url returned by your terminal.
 
 ### To run IP Scanner:
 
@@ -206,12 +208,30 @@ Range of ports: `1-80`
 
 ![Performance Analysis](./assets/Graph.png)
 
+## Blog
+
+
+[![Medium Story](https://img.shields.io/static/v1.svg?label=check&message=story%20on%20medium&color=success&logo=medium&style=for-the-badge&logoColor=white&colorA=grey)](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)
+
+- Check out [Kashish](https://github.com/kashish121)'s story on Medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
+She has shared her experience working on [this](https://vinitshahdeo.github.io/PortScanner/) project - **How it marks the commencement of her perennial journey to open source?**
+
+- Check out [Ishika](https://github.com/ishika1727)'s story on Medium: [**`git push`**: You just need a little PUSH](https://medium.com/@ishikadubey2000/look-mom-im-on-github-521bb6c1f51d)!
+She has shared her experience in working on [this](https://vinitshahdeo.github.io/PortScanner/) project and making her identity in the open-source world.
+
+## Open Source Programs
+
+<a href="https://www.leapcode.io/"><img src="./assets/leapcode.png" width="40%" height="10%"/></a>
+
+We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contribute to open-source projects right from your first PR to working on major projects. It's still under construction and hopeful to have their platform up pretty soon. [Click here](https://www.leapcode.io/) to get an early access.
+
 
 ## Useful resources :books:
 
 - [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `src/scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `src/scanner_thread.py`
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/): A micro web framework written in Python. Check `src/mainScanner.py`
 
 ## [Contributors](https://github.com/vinitshahdeo/PortScanner/graphs/contributors) :trophy:
 
@@ -230,10 +250,14 @@ Range of ports: `1-80`
 
 ## Admin
 
-|                                                                                         <a href="https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
+|                                                                                         <a href="https://www.eatmy.news/2020/06/code-like-you-eat-i-mean-code-daily-as.html"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
 | <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fvinitshahdeo%2FPortScanner.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fvinitshahdeo%2FPortScanner?ref=badge_large)
 
 ## TL;DR
 
