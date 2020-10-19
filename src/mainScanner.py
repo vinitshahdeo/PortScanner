@@ -24,6 +24,10 @@ exc = getattr(__builtin__, "IOError", "FileNotFoundError")
 # Clear the screen
 # subprocess.call('clear', shell=True)
 
+# As the path or file '../config.json' will be called multiple time it will be better to store it in environ varible
+
+os.environ["CONFIG_JSON"] = os.path.join("../", "config.json")
+
 
 @app.route('/input', methods=["POST"])
 def input():
@@ -54,9 +58,9 @@ def input():
 
     # Getting port range values from config.json
     try:
-        with open(get_absolute_path('../config.json')) as config_file:
+        with open(get_absolute_path(os.environ["CONFIG_JSON"])) as config_file:
             config = json.load(config_file)
-            print get_absolute_path('../config.json')
+            print get_absolute_path(os.environ["CONFIG_JSON"])
         # defining number of threads running concurrently
         CONST_NUM_THREADS = int(config['thread']['count'])
 

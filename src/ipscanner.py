@@ -19,6 +19,11 @@ print "-" * 60
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
 
 
+# As the path or file '../config.json' will be called multiple time it will be better to store it in environ varible
+
+os.environ["CONFIG_JSON"] = os.path.join("../", "config.json")
+
+
 def get_absolute_path(relative_path):
     dir = os.path.dirname(os.path.abspath(__file__))
     split_path = relative_path.split("/")
@@ -30,7 +35,7 @@ def get_absolute_path(relative_path):
 td1 = datetime.now()
 
 try:
-    with open(get_absolute_path('../config.json')) as config_file:
+    with open(get_absolute_path(os.environ["CONFIG_JSON"])) as config_file:
         config = json.load(config_file)
         # print get_absolute_path('../config.json')
     range_low = int(config['ipRange']['low'])
