@@ -23,10 +23,6 @@ print "-" * 60
 print "Please wait, scanning remote host....", remoteServerIP
 print "-" * 60
 
-# As the path or file '../config.json' will be called multiple time it will be better to store it in environ varible
-
-os.environ["CONFIG_JSON"] = os.path.join("../", "config.json")
-
 # Resolves the relative path to absolute path
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
 
@@ -43,9 +39,9 @@ t1 = datetime.now()
 
 # Getting port range values from config.json
 try:
-    with open(get_absolute_path(os.environ["CONFIG_JSON"])) as config_file:
+    with open(get_absolute_path(os.path.join("..", "config.json"))) as config_file:
         config = json.load(config_file)
-        print get_absolute_path(os.environ["CONFIG_JSON"])
+        print get_absolute_path(os.path.join("..", "config.json"))
     range_high = int(config['range']['high'])
     range_low = int(config['range']['low'])
     # defining number of threads running concurrently
