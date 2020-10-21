@@ -21,7 +21,7 @@ def split_processing(ports, num_splits, scan, range_low, range_high):
         threads[-1].start()  # start the thread we just created
     # The range - end will be helpful for remaining
     threads.append(
-        threading.Thread(target=scan, args=(ports, end, range_end)))
+        threading.Thread(target=scan, args=(ports, end, range_high)))
     threads[-1].start()
 
     # wait for all threads to finish
