@@ -1,3 +1,9 @@
+#To shift the base of the code from python 2 to 3 the following command can be executed on python command line
+#2to3"name of the file"
+
+
+
+
 #!/usr/bin/env python
 import socket
 import subprocess
