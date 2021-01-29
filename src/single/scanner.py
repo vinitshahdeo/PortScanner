@@ -20,7 +20,7 @@ print("Please wait, scanning remote host....", remoteServerIP)
 print("-" * 60)
 
 
-# Pull port range from config.json
+
 def get_absolute_path(relative_path):
     dir = os.path.dirname(os.path.abspath(__file__))
     new = os.path.dirname(os.path.dirname(dir))
@@ -33,6 +33,8 @@ def get_absolute_path(relative_path):
 # Check what time the scan started
 t1 = datetime.now()
 
+
+# Adding config.json path
 with open(get_absolute_path('/config.json')) as config_file:
     config = json.load(config_file)
     loRange = int(config['range']['low'])
