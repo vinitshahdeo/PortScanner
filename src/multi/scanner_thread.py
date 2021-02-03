@@ -1,6 +1,5 @@
 import threading
 
-
 def split_processing(ports, num_splits, scan, range_low, range_high):
     split_size = (range_high-range_low) // num_splits
     threads = []
@@ -17,3 +16,4 @@ def split_processing(ports, num_splits, scan, range_low, range_high):
     # wait for all threads to finish
     for t in threads:
         t.join()
+

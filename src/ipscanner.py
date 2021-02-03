@@ -18,7 +18,6 @@ print("-" * 60)
 # Resolves the relative path to absolute path
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
 
-
 def get_absolute_path(relative_path):
     dir = os.path.dirname(os.path.abspath(__file__))
     split_path = relative_path.split("/")
