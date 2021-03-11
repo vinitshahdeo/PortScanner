@@ -19,6 +19,12 @@ def homepage():
     return render_template('index.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
+
 exc = getattr(__builtin__, "IOError", "FileNotFoundError")
 
 # Clear the screen
