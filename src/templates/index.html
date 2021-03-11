@@ -54,7 +54,7 @@
                 <form class="col s12" action="/input" method="POST">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="host" name="host" type="text" class="validate" placeholder="For eg: google.com">
+                            <input id="host" name="host" type="text" class="validate" placeholder="For eg: google.com" required>
                             <label for="host" style="color: black;font-size: 20px;">Host to Scan</label>
                             <span class="helper-text" data-error="wrong" data-success="right">Enter the website you want
                                 to search open ports for</span>
@@ -63,14 +63,14 @@
 
                     <div class="row">
                         <div class="input-field col s6">
-                            <input placeholder="For eg: 1" id="first_name" type="number" name="range_low" class="validate">
+                            <input placeholder="For eg: 1" id="first_name" type="number" name="range_low" class="validate" required>
                             <label for="first_name" style="color: black;font-size: 20px;">Low</label>
                             <span class="helper-text" data-error="wrong" data-success="right">Enter the lower range
                                 (inclusive)</span>
 
                         </div>
                         <div class="input-field col s6">
-                            <input placeholder="For eg: 8888" id="last_name" type="number" name="range_high" class="validate">
+                            <input placeholder="For eg: 8888" id="last_name" type="number" name="range_high" class="validate" required>
                             <label for="last_name" style="color: black;font-size: 20px;">High</label>
                             <span class="helper-text" data-error="wrong" data-success="right">Enter the higher range
                                 (exclusive)</span>
