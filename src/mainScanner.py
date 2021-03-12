@@ -18,7 +18,10 @@ app = Flask(__name__)
 def homepage():
     return render_template('index.html')
 
-
+@app.route('/about')
+def about():
+    return render_template('about.html')
+    
 exc = getattr(builtins, "IOError", "FileNotFoundError")
 
 # Clear the screen
