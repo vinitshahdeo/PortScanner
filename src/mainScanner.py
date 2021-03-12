@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import socket
 import subprocess
 import sys
@@ -6,7 +6,7 @@ from datetime import datetime
 import json
 import os
 import threading
-import __builtin__
+import builtins
 from multi.scanner_thread import split_processing
 import logging
 from flask import Flask, render_template, request, redirect, url_for
@@ -19,7 +19,7 @@ def homepage():
     return render_template('index.html')
 
 
-exc = getattr(__builtin__, "IOError", "FileNotFoundError")
+exc = getattr(__builtins__, "IOError", "FileNotFoundError")
 
 # Clear the screen
 # subprocess.call('clear', shell=True)
@@ -37,9 +37,9 @@ def input():
         return EnvironmentError
 
     # Print a nice banner with information on which host we are about to scan
-    print "-" * 60
-    print "Please wait, scanning remote host....", remoteServerIP
-    print "-" * 60
+    print ("-" * 60)
+    print ("Please wait, scanning remote host....", remoteServerIP)
+    print ("-" * 60)
 
     # Resolves the relative path to absolute path
     # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
@@ -56,7 +56,7 @@ def input():
     try:
         with open(get_absolute_path('../config.json')) as config_file:
             config = json.load(config_file)
-            print get_absolute_path('../config.json')
+            print (get_absolute_path('../config.json'))
         # defining number of threads running concurrently
         CONST_NUM_THREADS = int(config['thread']['count'])
 
@@ -76,20 +76,20 @@ def input():
                 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 result = sock.connect_ex((remoteServerIP, port))
                 if result == 0:
-                    print "Port {}: 	 Open".format(port)
+                    print ("Port {}: 	 Open".format(port))
                     portnum.append("Port "+str(port))
                 sock.close()
 
         except KeyboardInterrupt:
-            print "You pressed Ctrl+C"
+            print ("You pressed Ctrl+C")
             sys.exit()
 
         except socket.gaierror:
-            print 'Hostname could not be resolved. Exiting'
+            print ('Hostname could not be resolved. Exiting')
             sys.exit()
 
         except socket.error:
-            print "Couldn't connect to server"
+            print ("Couldn't connect to server")
             sys.exit()
 
     # calling function from scanner_thread.py for multithreading
@@ -102,7 +102,7 @@ def input():
     total = t2 - t1
 
     # Printing the information to screen
-    print 'Scanning Completed in: ', total
+    print ('Scanning Completed in: ', total)
     return render_template('index.html', portnum=portnum, host=remoteServerIP, range_low=range_low, range_high=range_high, total=total)
 
 
