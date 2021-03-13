@@ -1,4 +1,4 @@
-name: Auto Assign Action
+name: 'Auto Assign Action'
 on: pull_request
 
 jobs:
