@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { Button, Form, FormGroup, Label, Input, Col, FormFeedback  } from "reactstrap";
+import '../css/portscanner.css';
 
 class PortScannerForm extends Component{
     constructor(){
