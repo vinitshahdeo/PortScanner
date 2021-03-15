@@ -20,15 +20,18 @@ The Tech Stacks required to build this Port Scanner are:
 ## 📌 Working 
 
 To check for the open ports, the Port Scanner attempt to connect to various ports and if the it is able to connect that means the port is open.
-![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/docs/scanner.py.png)
+![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/docs/ports.png)
 
-To excute the above statement the Scanner works in the following manner: 
+
 
 1. First the server code is executed where the `index.js` starts ten servers.`index.js` is coded in `express.js` which imports `randNum.js` to generate random number and open ports at those `localhost`. 
 
    It also imports `config.json` which stores values of low and high i.e. values within whose range the ports will open. In this code, it is set from 1 (inclusive) to 80 (exclusive). The code generates 10 random numbers from 1 to 8888 i.e low to high and starts servers at those ports. 
 
-2. Then the `scanner.py` code imports and uses several python    libraries like socket, subprocess and sys. 
+2. Then the `scanner.py` code imports and uses several python libraries like socket, subprocess and sys. 
+
+![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/docs/scanner.py.png)
+
 The `scanner.py` searches for all the open ports on remote server using sockets and prints the ports which are open i.e. where the server had started by `index.js`
 
 ## 🔗 Links
