@@ -246,20 +246,6 @@ We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contr
 | Kashish       | :bird: [Twitter](https://twitter.com/Kashish_121) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/kashish121/) | [@Kashish121](https://github.com/Kashish121/)      |
 | Ishika Dubey  | :bird: [Twitter](https://twitter.com/ishika1727) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/ishika1727/) | [@ishika1727](https://github.com/ishika1727/)      |
 
-> **See the contribution graph [here](https://github.com/vinitshahdeo/PortScanner/graphs/contributors).**
-
-[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
-
-## Admin
-
-|                                                                                         <a href="https://www.eatmy.news/2020/06/code-like-you-eat-i-mean-code-daily-as.html"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
-| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
-| <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
-
-
-## Other contributors:
-
 ### Credits goes to these people:✨
 
 <table>
@@ -271,6 +257,23 @@ We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contr
 		</td>
 	</tr>
 </table>
+
+> **See the contribution graph [here](https://github.com/vinitshahdeo/PortScanner/graphs/contributors).**
+
+[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
+
+
+
+## Admin
+
+|                                                                                         <a href="https://www.eatmy.news/2020/06/code-like-you-eat-i-mean-code-daily-as.html"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/vinit-shahdeo.jpg" width="150px " height="150px" /></a>                                                                                         |
+| :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
+| <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
+
+
+
+
 
 
 ## License
