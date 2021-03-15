@@ -3,10 +3,62 @@
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
 
-> ### **Note: Please follow [this link](https://github.com/vinitshahdeo/PortScanner/discussions/117) if you're a [GSSoC](https://gssoc.girlscript.tech/) participant.** Keep watching this repo, we'll be opening more `beginner-friendly` [issues](https://github.com/vinitshahdeo/PortScanner/issues).
+> ### **Note: Please follow [this link](https://github.com/vinitshahdeo/PortScanner/discussions/117) if you're a [GSSoC'21](https://gssoc.girlscript.tech/) participant.** Keep watching this repo, we'll be opening more `beginner-friendly` [issues](https://github.com/vinitshahdeo/PortScanner/issues).
 
 
 With this port scanner, I just attempt to connect<sup>This is a form of "reconnaissance" for hackers and penetration testers</sup> at various ports, and do nothing else. If I'm able to connect to open ports, then I know at least the port is open.
+
+## FAQs about GSSOC.
+**1. What is GSSOC?**
+
+Every summer, ‘The Girlscript Foundation’ conducts GSSoC, popularly known as the Girlscript Summer of Code. It is a three-month open-source program held from March to May. Currently, the fourth edition of the program is underway. It has successfully brought together thousands of beginners and open-source enthusiasts on a single platform.
+
+
+**2. Is GSSoC for complete beginners with no knowledge of Git, GitHub, and programming?**
+
+ Yes, GSSoC is open to every individual who wishes to kickstart their journey into open-source. The organization aims to assist beginners in the field of development. There are distinct projects appropriate for both beginners as well as the accolades. Hence, it will be feasible for every participant to learn something new from the projects he/she is contributing to.
+
+
+**3. What are the selection criteria for the participants?** 
+
+The participants who apply for the program will be selected based on their interest in exploring open-source. 
+
+
+**4. When will the program end?** 
+
+This program will conclude on 31st May.
+
+
+**5. When will the results be declared?** 
+
+The results will be declared in the second week of June 2021.
+
+
+**6. Are there any registration fees associated with the program?** 
+
+No, there are no registration fees for the program. It is completely free of cost.
+
+
+**7. How will the participants and the winners be rewarded?**
+
+Every participant of the program will receive a digital certificate from GirlScript Foundation. The winners will be receiving swags, goodies that will be couriered to them, and 
+cash prizes will be directly transferred to their bank accounts after the results are declared. 
+
+
+**8. Is this program only for girls?**
+
+No, this program is for both boys and girls.
+
+
+**9. How will the participants communicate their difficulties with the mentors and the project admins?**
+
+All the participants, mentors, and project admins can communicate in the discord server common to all those associated with the program.
+
+
+**10. As a participant, how many projects can I contribute to?**
+
+This year participants can contribute to any number of projects in March. But from April onwards, every participant will be allowed to contribute to only one project of their choice.  
+
 
 ## Pre-requisites :rotating_light:
 
