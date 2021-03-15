@@ -1,0 +1,23 @@
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color: #bdbdbd;
+    height: 1px;
+  }
+  
+  .form-control{
+    background-color: #f0f0f0;
+  }
+  button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  .form-control.is-invalid{
+    background-image: none;
+  }
+  .form-control.is-valid{
+    background-image: none;
+    border: none;
+  }

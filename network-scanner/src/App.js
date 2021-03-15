@@ -1,10 +1,7 @@
 import "./App.css";
-import PortScannerForm from "./components/PortScannerForm";
 
 function App() {
-  return <div className="container">
-          <PortScannerForm/>
-          </div>;
+  return <div className="App">Network Scanner</div>;
 }
 
 export default App;
