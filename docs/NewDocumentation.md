@@ -2,7 +2,7 @@
 
 ## 💻 Introduction
 
-Build in **Software-Defined Networking** (SDN) technology which is being used for efficient and real-time defense against cyber attacks, 
+Build in **Software-Defined Networking** (SDN) technology which is used for efficient and real-time defense against cyber attacks, 
  Port Scanner is an application intended to test a server or host for open ports. 
 
 This application can be utilized by managers to check security approaches of their systems and by assailants to recognize arrange administrations running on a host and adventure vulnerabilities.
@@ -20,7 +20,7 @@ The Tech Stacks required to build this Port Scanner are:
 ## 📌 Working 
 
 To check for the open ports, the Port Scanner attempt to connect to various ports and if the it is able to connect that means the port is open.
-![](docs/ports.png)
+![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/docs/scanner.py.png)
 
 To excute the above statement the Scanner works in the following manner: 
 
