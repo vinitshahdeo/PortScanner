@@ -1,3 +1,4 @@
+import sys; sys.dont_write_bytecode = True
 import socket
 from datetime import datetime
 import json

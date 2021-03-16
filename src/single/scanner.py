@@ -1,7 +1,7 @@
 #!/usr/bin/env python
+import sys; sys.dont_write_bytecode = True
 import socket
 import subprocess
-import sys
 from datetime import datetime
 
 # Clear the screen
