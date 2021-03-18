@@ -81,7 +81,7 @@ venv\Scripts\activate
 
 ```ps
 pip install flask
-python mainScanner.py
+python src/mainScanner.py
 ```
 **6**. Go to the port url returned by your terminal.
 
