@@ -22,7 +22,7 @@ print ("-" * 60)
 def get_absolute_path(relative_path):
     dir = os.path.dirname(os.path.abspath(__file__))
     split_path = relative_path.split("/")
-    absolute_path = os.path.join(new, *split_path)
+    absolute_path = os.path.join(dir, *split_path)
     return absolute_path
 
 # Check what time the scan started
