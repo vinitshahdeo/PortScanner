@@ -24,7 +24,7 @@ To check for the open ports, the Port Scanner attempts to connect to various por
    ![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/assets/scanner.py%20screen.png)
 
 
-1. First the server code is executed where the `index.js` starts ten servers.`index.js` is coded in `express.js` which imports `randNum.js` to generate random number and open ports at those `localhost`. 
+1. First the server code is executed where the `index.js` starts ten servers.`index.js` is coded in `express.js` which imports `randNum.js` to generate random number and open ports at those localhost. 
 
    ![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/assets/index.js.png)
 
