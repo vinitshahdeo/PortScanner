@@ -19,7 +19,7 @@ The Tech Stacks required to build this Port Scanner are:
 
 ## 📌 Working
 
- #### To check for the open ports, Using `scanner.py` the Port Scanner attempts to connect to various ports and if it is able to connect that means the port is open.
+ ### To check for the open ports, Using `scanner.py` the Port Scanner attempts to connect to various ports and if it is able to connect that means the port is open.
   
 
    ![](https://github.com/SSHREYA71/PortScanner/blob/feature/documentation/assets/scanner.py%20screen.png)
@@ -42,10 +42,10 @@ The Tech Stacks required to build this Port Scanner are:
    ![](https://raw.githubusercontent.com/SSHREYA71/PortScanner/feature/documentation/assets/scanner.py.png)
    
 
-The `scanner.py` searches for all the open ports on remote server using sockets and prints the ports which are open i.e. where the server had started by `index.js`
+  The `scanner.py` searches for all the open ports on remote server using sockets and prints the ports which are open i.e. where the server had started by `index.js`
 
 
-  #### To scan all the IP addresses and print the addresses which are live, We use `ipscanner.py`.
+  ### To scan all the IP addresses and print the addresses which are live, We use `ipscanner.py`.
   
 
 1. To run IP Scanner open terminal and type `python src/ipscanner.py`and enter any IP address XXX.XXX.XXX.YYY in the space provided.
@@ -60,7 +60,7 @@ The `scanner.py` searches for all the open ports on remote server using sockets 
     ![](https://github.com/SSHREYA71/PortScanner/blob/feature/documentation/assets/ipscanned.png)
    
 
-  #### To run the scanner in a virtual enviornment we use `mainScanner`. 
+  ### To run the scanner in a virtual enviornment we use `mainScanner`. 
   
   
 1. To run the portscanner in a virtual enviornment firstly we need to install `flask` using the `pip install flask` command after this we also need to install the virtual enviorment using `pip install virtualenv` and then activate the enviornment. Then in the termianal we run the `python src/mainScanner` command.
