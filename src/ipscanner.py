@@ -5,15 +5,15 @@ import os
 from multi.scanner_thread import split_processing
 
 # Ask for input
-net1 = raw_input('Enter the IP address: ')
+net1 = input('Enter the IP address: ')
 net2 = net1.split('.')
 a = '.'
 net3 = net2[0] + a + net2[1] + a + net2[2] + a
 
 # Print a nice banner with information on which host we are about to scan
-print "-" * 60
-print "Please wait, scanning IP address....", net3+"XXX"
-print "-" * 60
+print("-" * 60)
+print("Please wait, scanning IP address....", net3+"XXX")
+print("-" * 60)
 
 # Resolves the relative path to absolute path
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
@@ -63,11 +63,11 @@ def scan(addr):
 
 
 def run1(ips, range_low, range_high):
-    for ip in xrange(range_low, range_high):
+    for ip in range(range_low, range_high):
         addr = net3+str(ip)
         # gets full address
         if (scan(addr)):
-            print addr + " is live\n"
+            print(addr + " is live\n")
 
 
 # calling function from scanner_thread.py for multithreading
@@ -77,4 +77,4 @@ td2 = datetime.now()
 # Calculates the difference of time, to see how long it took to run the script
 total = td2-td1
 # Printing the information to screen
-print "Scanning completed in ", total
+print("Scanning completed in ", total)
