@@ -22,6 +22,10 @@ def homepage():
      def contact();
      return render_template('contact.html')
 
+@app.route('/instructions')
+      def instructions();
+      return render_template('instructions.html')
+
 exc = getattr(builtins, "IOError", "FileNotFoundError")
 
 # Clear the screen
