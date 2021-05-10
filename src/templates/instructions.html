@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="static/css/materialize.min.css" media="screen,projection" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static\css\index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <script src="static\js\index.js" type="text/javascript"></script>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+
+    <body>
+        <div id="navbar">
+            <ul class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view">
+                        <div class="background" style="background-color:  #3b6978;">
+                        </div>
+                        <a href="#user"><img class="circle"
+                                src="https://user-images.githubusercontent.com/51280276/110759236-660e5f80-8273-11eb-8ba5-35f5cdd13cc6.png"></a>
+                        <a href="#name"><span class="white-text name" style="padding-bottom: 5%;" class="navtitle">Port
+                                Scanner<br></span></a>
+                    </div>
+                </li>
+                <li><a href="/">Scan Port</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#!">Contact</a></li>
+                <center>
+                    <a href="https://github.com/vinitshahdeo/PortScanner">
+                        <i class="fa fa-github" style=" font-size:48px; color:#3b6978">
+                        </i>
+                    </a>
+                </center>
+
+            </ul>
+
+            <script type="text/javascript" src="static/js/materialize.min.js"></script>
+        </div>
+        <div id="showpage">
+           <style> 
+              h1 {
+                color: navy;
+                font-size: 48px;
+              }
+              dt {
+                color: navy;
+              }
+              dl {
+                  color: red;
+              }
+            
+            </style>
+
+            <h1>How to run PortScanner</h1>
+                <div class="row">
+                    <p><b><i>This is a step-by-step guide on how to run the PortScanner application
+                            after Python 2.7, Node.js, and Pip are installed.
+                    </i>
+                    </b>
+                    </p>
+                    
+                </div>
+            <ul>
+            <dl><b>Via Terminal</b></dl>
+                <dt><b>Step 1:</b>
+                        <dd>Open terminal and type <i>npm install:</i> 
+                            This will install the dependencies (Express).
+                        </dd>
+                <dt><b>Step 2:</b>
+                        <dd>Open another terminal and type <i>python src/scanner.py</i> 
+                        </dd>   
+                <dt><b>Step 3:</b>
+                        <dd>Enter <i>localhost</i> or <i>127.0.0.1</i>
+                            This scans all the ports and prints the open ports.
+                        </dd>    
+                 
+                        
+            <dl><b>Via UI</b></dl>
+                    <dt><b>Step 1:</b>
+                          <dd>Open terminal and type <i>pip install flask</i> 
+                             This will install the dependencies (Express).
+                            </dd>
+                    <dt><b>Step 2:</b>
+                            <dd>Then type <i>pip install virtualenv
+                                virtualenv --help</i> via pip
+                            </dd>   
+                    <dt><b>Step 3:</b>
+                            <dd>Create a venv folder inside src by entering
+                                 <i>python -m virtualenv venv
+                                    \Python27\Scripts\virtualenv.exe venv</i>
+                            </dd>    
+                    <dt><b>Step 4:</b>
+                            <dd>Activate venv with <i>venv\Scripts\activate</i>
+                            </dd> 
+                    <dt><b>Step 5:</b>
+                            <dd>Run mainScanner.py with
+                                <i>pip install flask
+                                python src/mainScanner.py</i>
+                             </dd> 
+                    <dt><b>Step 6:</b>
+                            <dd>Go to the port url returned by your terminal.
+                            </dd>  
+
+        
+    
+            </ul>
+        </div>
+
+    </body>
+
+</html> 

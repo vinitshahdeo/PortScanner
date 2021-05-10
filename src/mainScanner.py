@@ -17,7 +17,14 @@ app = Flask(__name__)
 @app.route('/')
 def homepage():
     return render_template('index.html')
+    
+@app.route('/contact')
+     def contact();
+     return render_template('contact.html')
 
+@app.route('/instructions')
+      def instructions();
+      return render_template('instructions.html')
 
 exc = getattr(builtins, "IOError", "FileNotFoundError")
 
