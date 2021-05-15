@@ -1,0 +1,23 @@
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color: #bdbdbd;
+    height: 1px;
+    margin: 0rem 0rem 1.2rem 0rem;
+  }
+
+#history-component{
+  margin: 10px;
+}
+
+thead{
+  background-color: #E2E2E2;
+}
+
+
+th{
+  font-size: large;
+  color: #404040;
+}
