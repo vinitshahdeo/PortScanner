@@ -73,6 +73,16 @@ typings/
 .env
 .env.test
 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 
