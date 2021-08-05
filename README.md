@@ -1,4 +1,7 @@
-# Port Scanner 
+# Port Scanner
+<img src="./assets/raw/logo/Logo2.png" alt="PortScanner Logo" width="200"/>
+
+
 ## A basic [Port Scanner](https://vinitshahdeo.github.io/PortScanner/) :mag_right: using Python with an [Express](https://expressjs.com/) Server to test!
 
 [![GitHub license](https://img.shields.io/github/license/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/blob/master/LICENSE) [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/vinitshahdeo/PortScanner?logo=github)](https://github.com/vinitshahdeo/PortScanner/) [![GitHub last commit](https://img.shields.io/github/last-commit/vinitshahdeo/PortScanner?logo=git&logoColor=white)](https://github.com/vinitshahdeo/PortScanner/commits/master)
@@ -17,7 +20,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 - **Node.js** `>= v0.10.0`
     - Install Node.js from [here](https://nodejs.org/).
-    
+
 - **Pip** `>= v9.0.1`
     - Install pip from [here](https://pip.pypa.io/en/stable/installing/).
 
@@ -41,11 +44,11 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 **1**. In PowerShell,
 
-```ps 
+```ps
 pip install flask
 ```
 
-#### Install virtual environment 
+#### Install virtual environment
 
 > *This step is required only if you are using Python2.7, skip this step when running Python3.X.*
 
@@ -104,7 +107,7 @@ The servers are opened at multiple ports, you can change the low range and high 
         "high": "255"
     },
     "count": "10",
-    "thread": { 
+    "thread": {
         "count": 8
     }
 }
@@ -123,7 +126,7 @@ The servers are opened at multiple ports, you can change the low range and high 
 
 > Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+**We're accepting PRs for our open and unassigned [issues](https://github.com/vinitshahdeo/PortScanner/issues)**. Please check [CONTRIBUTING.md](CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:**
 
 **1.** Fork [this](https://github.com/vinitshahdeo/PortScanner) repository.
 
@@ -179,7 +182,7 @@ git checkout feature/python3.8
 
 >The ability of a process to execute multiple threads parallelly is called multithreading. Ideally, multithreading can significantly improve the performance of any program.
 
-Imagine scanning substantial number of ports(`range.high` = 8888) consecutively. The process would require quite a long time. 
+Imagine scanning substantial number of ports(`range.high` = 8888) consecutively. The process would require quite a long time.
 
 This calls for the need of concurrency in different parts of this range(1-8888). That is, running different parts(1-1111, 1112-2222, 2223-3333...) of the same process at the same time. This would reduce the time required for completion by significant amount. The reduction in time can be related to the number of concurrent ranges(threads) being scanned simultaneously. Checkout the `Performance Analysis` for a follow up.
 
@@ -206,7 +209,7 @@ Range of ports: `1-80`
 |16               |36870                              |74.26 % faster        |
 |32               |32674                              |77.19 % faster        |
 
-#### Performance Analysis 
+#### Performance Analysis
 
 ![Performance Analysis](./assets/Graph.png)
 
@@ -215,7 +218,7 @@ Range of ports: `1-80`
 
 [![Medium Story](https://img.shields.io/static/v1.svg?label=check&message=story%20on%20medium&color=success&logo=medium&style=for-the-badge&logoColor=white&colorA=grey)](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)
 
-- Check out [Kashish](https://github.com/kashish121)'s story on Medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)! 
+- Check out [Kashish](https://github.com/kashish121)'s story on Medium - [GO-GREEN featuring GITHUB](https://medium.com/@kashish_121/go-green-featuring-github-f8750fbf0729)!
 She has shared her experience working on [this](https://vinitshahdeo.github.io/PortScanner/) project - **How it marks the commencement of her perennial journey to open source?**
 
 - Check out [Ishika](https://github.com/ishika1727)'s story on Medium: [**`git push`**: You just need a little PUSH](https://medium.com/@ishikadubey2000/look-mom-im-on-github-521bb6c1f51d)!
@@ -279,6 +282,6 @@ if (_.isAwesome(thisRepo)) {
 
 <sup>This repository is intended for individuals to test their own equipment for weak
  security, and the author(**@vinitshahdeo**) will take no responsibility if it is put to any other use. Check [DISCLAIMER.md](./DISCLAIMER.md)</sup>
- 
+
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/vinitshahdeo/PortScanner/) [![Built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahdeo/)
- 
+
