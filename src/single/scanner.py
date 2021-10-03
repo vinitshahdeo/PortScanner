@@ -6,12 +6,6 @@ import subprocess
 import sys
 from datetime import datetime
 
-# For colourful output
-red = "\033[1;31m"
-green = "\033[1;32m"
-blue = "\033[1;34m"
-ENDC = '\033[0m'
-
 # Clear the screen
 subprocess.call('cls', shell=True)
 
