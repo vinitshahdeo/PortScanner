@@ -25,6 +25,28 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 
 > Note: You can enter remote host if you want to scan the ports for any remote host. Check the [DISCLAIMER.md](./DISCLAIMER.md) before doing this.
+### To run Port Scanner: (Via GUI)
+*Gui support is only available for python3*
+
+#### Install [PyQt5](https://doc.qt.io/qtforpython)
+
+*Make sure you have python3 path added to your system's environment variables.*
+> 
+**1**. In PowerShell,
+
+```ps 
+pip install PyQt5
+```
+
+#### Run  'gui/main.py' from python
+
+**2**. From project root, run the following command to start the GUI application
+
+   In PowerShell,
+
+```ps
+python gui/main.py
+```
 
 ## Configuration
 
@@ -43,6 +65,8 @@ The servers are opened at multiple ports, you can change the low range and high 
 - `low`: _lowest port number (**inclusive**)_
 - `high`: _highest port number (**exclusive**)_
 - `count`: _total number of ports_
+
+
 
 ## Useful resources 
 
