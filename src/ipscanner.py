@@ -15,7 +15,7 @@ print "-" * 60
 print "Please wait, scanning IP address....", net3+"XXX"
 print "-" * 60
 
-# Resolves the relative path to absolute path
+# Resolves the relative path to the absolute path
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
 
 
@@ -26,7 +26,7 @@ def get_absolute_path(relative_path):
     return absolute_path
 
 
-# Check what time the scan started
+# Check at what time did the scan start
 td1 = datetime.now()
 
 try:
@@ -74,7 +74,7 @@ def run1(ips, range_low, range_high):
 split_processing(ips, CONST_NUM_THREADS, run1, range_low, range_high)
 # Checking the time again
 td2 = datetime.now()
-# Calculates the difference of time, to see how long it took to run the script
+# Calculates the difference between time, to see how long did it take to run the script
 total = td2-td1
-# Printing the information to screen
+# Printing the information on the screen
 print "Scanning completed in ", total
