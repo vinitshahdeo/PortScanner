@@ -246,9 +246,23 @@ We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contr
 | Kashish       | :bird: [Twitter](https://twitter.com/Kashish_121) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/kashish121/) | [@Kashish121](https://github.com/Kashish121/)      |
 | Ishika Dubey  | :bird: [Twitter](https://twitter.com/ishika1727) <br>:mortar_board: [LinkedIn](https://www.linkedin.com/in/ishika1727/) | [@ishika1727](https://github.com/ishika1727/)      |
 
+### Credits goes to these people:✨
+
+<table>
+	<tr>
+		<td>
+   <a href="https://github.com/vinitshahdeo/PortScanner/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vinitshahdeo/PortScanner" />
+</a>
+		</td>
+	</tr>
+</table>
+
 > **See the contribution graph [here](https://github.com/vinitshahdeo/PortScanner/graphs/contributors).**
 
 [![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/0)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/1)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/2)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/3)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/4)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/5)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/6)](https://github.com/vinitshahdeo/PortScanner/)[![](https://sourcerer.io/fame/vinitshahdeo/vinitshahdeo/PortScanner/images/7)](https://github.com/vinitshahdeo/PortScanner/)
+
+
 
 ## Admin
 
@@ -256,6 +270,10 @@ We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contr
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                                                        **[Vinit Shahdeo](https://fayz.in/stories/s/1522/0/?ckt_id=ZGL1ZGVk&title=story_of_vinit_shahdeo)**                                                                                                                                        |
 | <a href="https://twitter.com/Vinit_Shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/twitter.png" width="32px" height="32px"></a> <a href="https://www.facebook.com/vinit.shahdeo"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/facebook.png" width="32px" height="32px"></a> <a href="https://www.linkedin.com/in/vinitshahdeo/"><img src="https://raw.githubusercontent.com/vinitshahdeo/Water-Monitoring-System/master/assets/linkedin.png" width="32px" height="32px"></a> |
+
+
+
+
 
 
 ## License
