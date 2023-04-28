@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Toggle Button</title>
+
+        <style>
+            html
+{
+    --background: #212121;
+    --box-shadow: #000;
+    --text: #FFF;
+    --text-faded: #CCC;
+    --badge-background: #162F48;
+    --badge-color: #0B81D0;
+}
+
+.theme-dark
+{
+    --background: #FFF;
+    --box-shadow: #CCC;
+    --text: #212121;
+    --text-faded: #333;
+    --badge-background: #FFDA44;
+    --badge-color: #d35400;
+}
+
+.first 
+{
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 25px;
+    font-size: 150%;
+}
+
+.first:before
+{
+    content: '☀️';
+}
+
+.first.active:before 
+{
+    content: '🌒';
+}
+
+.first.animate 
+{
+    animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.second
+{
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    border-radius: 100%;
+    width: 2px;
+    height: 2px;
+    display: block;
+    z-index: -1;
+    box-shadow: 0 0 0 0 #212121;
+    transition: box-shadow .3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.second.active 
+{
+    background: #212121;
+    box-shadow: 0 0 0 9999px #212121;
+}
+
+@keyframes animate 
+{
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+        </style>
+    </head>
+    <body>
+        <!------ troggle------------>
+        <span class="first"></span>
+        <!--------- wave ----------->
+        <span class="second"></span>
+
+        <script>
+            document.querySelector('.first').addEventListener('click', function() {
+    this.classList.add('animate');
+    
+    setTimeout(() => {
+        this.classList.toggle('active');
+        document.querySelector('.second').classList.toggle('active');
+        document.documentElement.classList.toggle('theme-dark');
+    }, 150);
+    
+    setTimeout(() => this.classList.remove('animate'), 300);
+});
+        </script>
+    </body>
+</html>
