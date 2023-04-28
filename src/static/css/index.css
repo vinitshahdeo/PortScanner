@@ -51,7 +51,7 @@ a{
     margin-top: 1.5vw;
     margin-bottom:1.5vw ;
 }
-#form{
+#form , .result-list{
     margin-top: 5%;
     font-size: 10px;
     align-items: center;
