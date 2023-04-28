@@ -11,14 +11,14 @@ from multi.scanner_thread import split_processing
 
 exc = getattr(__builtin__, "IOError", "FileNotFoundError")
 
-# Clear the screen
+# Clearing the screen
 subprocess.call('clear', shell=True)
 
-# Ask for input
+# Asking for the input
 remoteServer = raw_input("Enter a remote host to scan: ")
 remoteServerIP = socket.gethostbyname(remoteServer)
 
-# Print a nice banner with information on which host we are about to scan
+# Printing a nice banner with information on which host we are about to scan
 print "-" * 60
 print "Please wait, scanning remote host....", remoteServerIP
 print "-" * 60
@@ -34,7 +34,7 @@ def get_absolute_path(relative_path):
 # Check what time the scan started
 t1 = datetime.now()
 
-# Getting port range values from config.json
+# Getting the port range values from config.json file
 try:
     with open(get_absolute_path('../config.json')) as config_file:
         config = json.load(config_file)
@@ -47,10 +47,10 @@ try:
 except IOError:
     print("config.json file not found")
 except ValueError:
-    print("Kindly check the json file for appropriateness of range")
+    print("Kindly check the json file for appropriateness of the range")
 
 ports = list(range(range_low, range_high, 1))
-# scanning the port only in range of (range_low, range_high)
+# scanning the port only in given range of (range_low, range_high)
 
 def scan(ports, range_low, range_high):
     try:
@@ -66,11 +66,11 @@ def scan(ports, range_low, range_high):
         sys.exit()
 
     except socket.gaierror:
-        print 'Hostname could not be resolved. Exiting'
+        print 'Hostname could not be resolved. Exiting, please try again'
         sys.exit()
 
     except socket.error:
-        print "Couldn't connect to server"
+        print "Couldn't connect to server :/"
         sys.exit()
 
 
@@ -84,4 +84,4 @@ t2 = datetime.now()
 total = t2 - t1
 
 # Printing the information to screen
-print 'Scanning Completed in: ', total
+print 'The scanning got completed in: ', total
