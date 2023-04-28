@@ -20,7 +20,7 @@ remoteServerIP = socket.gethostbyname(remoteServer)
 
 # Print a nice banner with information on which host we are about to scan
 print "-" * 60
-print "Please wait, scanning remote host....", remoteServerIP
+print "Please wait, scanning the remote host....", remoteServerIP
 print "-" * 60
 
 # Resolves the relative path to absolute path
@@ -45,9 +45,9 @@ try:
     CONST_NUM_THREADS = int(config['thread']['count'])
 
 except IOError:
-    print("config.json file not found")
+    print("config.json file was not found!")
 except ValueError:
-    print("Kindly check the json file for appropriateness of range")
+    print("Please Kindly check the json file for appropriateness of range")
 
 ports = list(range(range_low, range_high, 1))
 # scanning the port only in range of (range_low, range_high)
@@ -66,11 +66,11 @@ def scan(ports, range_low, range_high):
         sys.exit()
 
     except socket.gaierror:
-        print 'Hostname could not be resolved. Exiting'
+        print 'Hostname could not be resolved. Exiting!'
         sys.exit()
 
     except socket.error:
-        print "Couldn't connect to server"
+        print "Couldn't connect to server, exiting!"
         sys.exit()
 
 
