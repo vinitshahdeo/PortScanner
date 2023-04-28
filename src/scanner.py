@@ -25,20 +25,23 @@ print "-" * 60
 
 # Resolves the relative path to absolute path
 # [BUG]: https://github.com/vinitshahdeo/PortScanner/issues/19
+
+
 def get_absolute_path(relative_path):
     dir = os.path.dirname(os.path.abspath(__file__))
     split_path = relative_path.split("/")
     absolute_path = os.path.join(dir, *split_path)
     return absolute_path
 
+
 # Check what time the scan started
 t1 = datetime.now()
 
 # Getting port range values from config.json
 try:
-    with open(get_absolute_path('../config.json')) as config_file:
+    with open(get_absolute_path(os.path.join("..", "config.json"))) as config_file:
         config = json.load(config_file)
-        print get_absolute_path('../config.json')
+        print get_absolute_path(os.path.join("..", "config.json"))
     range_high = int(config['range']['high'])
     range_low = int(config['range']['low'])
     # defining number of threads running concurrently
@@ -51,6 +54,7 @@ except ValueError:
 
 ports = list(range(range_low, range_high, 1))
 # scanning the port only in range of (range_low, range_high)
+
 
 def scan(ports, range_low, range_high):
     try:
