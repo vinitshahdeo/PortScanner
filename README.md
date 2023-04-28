@@ -37,7 +37,7 @@ With this port scanner, I just attempt to connect<sup>This is a form of "reconna
 
 #### Install [flask](https://flask.palletsprojects.com/en/1.1.x/installation/#install-flask)
 
-> *Make sure you have `Python27\Scripts` path added to your system's environment variables.*
+> *Make sure you have the `Python27\Scripts` path added to your system's environment variables.*
 
 **1**. In PowerShell,
 
@@ -62,7 +62,7 @@ virtualenv --help
 
 #### Create virtual environment
 
-**3**. Create a `venv` folder inside `src`,
+**3**. Create a `venue folder inside `src`,
 
 ```ps
 python -m virtualenv venv
@@ -83,7 +83,7 @@ venv\Scripts\activate
 pip install flask
 python src/mainScanner.py
 ```
-**6**. Go to the port url returned by your terminal.
+**6**. Go to the port URL returned by your terminal.
 
 ### To run IP Scanner:
 
@@ -91,7 +91,7 @@ python src/mainScanner.py
 
 ## Configuration :gear:
 
-The servers are opened at multiple ports, you can change the low range and high range for the ports to be listened by the Express server.
+The servers are opened at multiple ports, you can change the low range and high range for the ports to be listened to by the Express server.
 
 ```js
 {
@@ -167,7 +167,7 @@ git push -u origin <your_branch_name>
 
 ## Branching :construction:
 
-- `master` branch is maintained and tested regulary for **Python 2**.
+- `master` branch is maintained and tested regularly for **Python 2**.
 
 - Please checkout `feature/python3.8` if you're using **[Python 3](https://www.python.org/download/releases/3.0/)**.
 
@@ -181,12 +181,12 @@ git checkout feature/python3.8
 
 Imagine scanning substantial number of ports(`range.high` = 8888) consecutively. The process would require quite a long time. 
 
-This calls for the need of concurrency in different parts of this range(1-8888). That is, running different parts(1-1111, 1112-2222, 2223-3333...) of the same process at the same time. This would reduce the time required for completion by significant amount. The reduction in time can be related to the number of concurrent ranges(threads) being scanned simultaneously. Checkout the `Performance Analysis` for a follow up.
+This calls for the need for concurrency in different parts of this range(1-8888). That is, running different parts(1-1111, 1112-2222, 2223-3333...) of the same process at the same time. This would reduce the time required for completion by a significant amount. The reduction in time can be related to the number of concurrent ranges(threads) being scanned simultaneously. Check out the `Performance Analysis` for a follow-up.
 
 ## Performance using threads :dart:
 
 - `src/single/scanner.py`: Scanner without thread
-- `src/scanner.py`: Scanner with multi threads
+- `src/scanner.py`: Scanner with multi-threads
 
 |Range(low-high)|`src/single/scanner.py` (in milliseconds)    |`src/scanner.py` (in milliseconds)   |
 |---------------|----------------------------------|----------------------------------------|
@@ -194,7 +194,7 @@ This calls for the need of concurrency in different parts of this range(1-8888).
 
 > `CONST_NUM_THREADS` : 8
 
-### Performance on the basis of number of threads :chart_with_downwards_trend:
+### Performance on the basis of a number of threads :chart_with_downwards_trend:
 
 Range of ports: `1-80`
 
@@ -225,12 +225,12 @@ She has shared her experience in working on [this](https://vinitshahdeo.github.i
 
 <a href="https://www.leapcode.io/"><img src="./assets/leapcode.png" width="40%" height="10%"/></a>
 
-We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contribute to open-source projects right from your first PR to working on major projects. It's still under construction and hopeful to have their platform up pretty soon. [Click here](https://www.leapcode.io/) to get an early access.
+We're now a part of **[Leapcode](https://www.leapcode.io/)**. It helps you contribute to open-source projects right from your first PR to working on major projects. It's still under construction and hopeful to have their platform up pretty soon. [Click here](https://www.leapcode.io/) to get early access.
 
 
 ## Useful resources :books:
 
-- [Express](https://expressjs.com/): Node.js web framework used for creating server. Check `server/index.js`
+- [Express](https://expressjs.com/): Node.js web framework used for creating the server. Check `server/index.js`
 - [Socket](https://docs.python.org/3/library/socket.html):  Low-level networking interface in Python. Check `src/scanner.py`
 - [Threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism in python. Check `src/scanner_thread.py`
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/quickstart/): A micro web framework written in Python. Check `src/mainScanner.py`
@@ -277,8 +277,7 @@ if (_.isAwesome(thisRepo)) {
 
 [![GitHub followers](https://img.shields.io/github/followers/vinitshahdeo.svg?label=Follow%20@vinitshahdeo&style=social)](https://github.com/vinitshahdeo/)  [![Twitter Follow](https://img.shields.io/twitter/follow/Vinit_Shahdeo?style=social)](https://twitter.com/Vinit_Shahdeo)
 
-<sup>This repository is intended for individuals to test their own equipment for weak
- security, and the author(**@vinitshahdeo**) will take no responsibility if it is put to any other use. Check [DISCLAIMER.md](./DISCLAIMER.md)</sup>
+<sup>This repository is intended for individuals to test their own equipment for weak security, and the author(**@vinitshahdeo**) will take no responsibility if it is put to any other use. Check [DISCLAIMER.md](./DISCLAIMER.md)</sup>
  
 [![Made with Python](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/vinitshahdeo/PortScanner/) [![Built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/vinitshahdeo/)
  
