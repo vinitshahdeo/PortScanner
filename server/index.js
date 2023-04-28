@@ -26,6 +26,6 @@ let portsArray = [...ports];
 for (let index = 0; index < portsArray.length; index++) {
     
     express().listen(portsArray[index], () => {
-        console.log('\n.......Started a server........\n');
+        console.log('\n.......Started a server on Port ' + portsArray[index] + '........\n');
     });
 }
